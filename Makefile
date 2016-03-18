@@ -124,10 +124,10 @@ version.c : version.c.in
 		-e "s,@@COMMIT@@,$(shell if [ -d .git ] ; then git log -1 --pretty=format:%H ; elif [ -f commit ]; then cat commit ; else echo commit id not available; fi)," \
 		< version.c.in > version.c
 
-certdb/secmod.db: shim.crt
+certdb/secmod.db: shim.crt shim.p12
 	-mkdir certdb
-	$(PK12UTIL) -d certdb/ -i shim.p12 -W "" -K ""
 	$(CERTUTIL) -d certdb/ -A -i shim.crt -n shim -t u
+	$(PK12UTIL) -d certdb/ -i shim.p12 -W "" -K ""
 
 shim.o: $(SOURCES) shim_cert.h
 shim.o: $(wildcard *.h)
