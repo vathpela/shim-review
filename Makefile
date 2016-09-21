@@ -7,6 +7,7 @@ endif
 CC		= $(CROSS_COMPILE)gcc
 LD		= $(CROSS_COMPILE)ld
 OBJCOPY		= $(CROSS_COMPILE)objcopy
+OPENSSL		?= openssl
 
 ARCH		= $(shell $(CC) -dumpmachine | cut -f1 -d- | sed s,i[3456789]86,ia32,)
 OBJCOPY_GTE224  = $(shell expr `$(OBJCOPY) --version |grep ^"GNU objcopy" | sed 's/^.*\((.*)\|version\) //g' | cut -f1-2 -d.` \>= 2.24)
@@ -106,7 +107,7 @@ shim.crt:
 	./make-certs shim shim@xn--u4h.net all codesign 1.3.6.1.4.1.311.10.3.1 </dev/null
 
 shim.cer: shim.crt
-	openssl x509 -outform der -in $< -out $@
+	$(OPENSSL) x509 -outform der -in $< -out $@
 
 shim_cert.h: shim.cer
 	echo "static UINT8 shim_cert[] = {" > $@
