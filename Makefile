@@ -100,6 +100,8 @@ MOK_SOURCES = MokManager.c shim.h include/console.h PasswordCrypt.c PasswordCryp
 FALLBACK_OBJS = fallback.o
 FALLBACK_SRCS = fallback.c
 
+.PRECIOUS: $(MMNAME).efi $(FBNAME).efi
+
 ifneq ($(origin ENABLE_HTTPBOOT), undefined)
 	OBJS += httpboot.o
 	SOURCES += httpboot.c httpboot.h
