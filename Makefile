@@ -12,6 +12,7 @@ HEXDUMP		?= hexdump
 PK12UTIL	?= pk12util
 CERTUTIL	?= certutil
 PESIGN		?= pesign
+SBSIGN		?= sbsign
 
 ARCH		= $(shell $(CC) -dumpmachine | cut -f1 -d- | sed s,i[3456789]86,ia32,)
 OBJCOPY_GTE224  = $(shell expr `$(OBJCOPY) --version |grep ^"GNU objcopy" | sed 's/^.*\((.*)\|version\) //g' | cut -f1-2 -d.` \>= 2.24)
@@ -190,8 +191,8 @@ endif
 		-j .note.gnu.build-id \
 		$(FORMAT) $^ $@.debug
 
-%.efi.signed: %.efi certdb/secmod.db
-	$(PESIGN) -n certdb -i $< -c "shim" -s -o $@ -f
+%.efi.signed: %.efi shim.key shim.crt
+	$(SBSIGN) --key shim.key --cert shim.crt --output $@ $<
 
 clean:
 	$(MAKE) -C Cryptlib clean
