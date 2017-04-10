@@ -1,0 +1,14 @@
+
+iso at http://cdimage.ubuntu.com/ubuntu-server/daily/current/
+
+sudo apt install devscripts
+sudo apt build-dep shim
+
+dget -x  (the url to the source package),  or you can  bzr branch lp:~ubuntu-core-dev/shim/trunk until I make that a git tree
+
+finally 'debuild' to build the .deb
+
+https://launchpad.net/ubuntu/+source/gcc-6/6.2.1-5ubuntu1/+build/11251177
+https://launchpad.net/ubuntu/+source/binutils/2.27.51.20161127-1ubuntu1/+build/11263502
+
+https://launchpad.net/ubuntu/+source/gcc-6/6.2.1-5ubuntu1/+build/11251177/+files/cpp-6_6.2.1-5ubuntu1_amd64.deb https://launchpad.net/ubuntu/+source/gcc-6/6.2.1-5ubuntu1/+build/11251177/+files/gcc-6-base_6.2.1-5ubuntu1_amd64.deb https://launchpad.net/ubuntu/+source/gcc-6/6.2.1-5ubuntu1/+build/11251177/+files/gcc-6_6.2.1-5ubuntu1_amd64.deb https://launchpad.net/ubuntu/+source/gcc-6/6.2.1-5ubuntu1/+build/11251177/+files/libgcc-6-dev_6.2.1-5ubuntu1_amd64.deb https://launchpad.net/ubuntu/+source/binutils/2.27.51.20161127-1ubuntu1/+build/11263502/+files/binutils_2.27.51.20161127-1ubuntu1_amd64.deb
