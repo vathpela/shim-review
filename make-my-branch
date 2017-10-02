@@ -58,4 +58,4 @@ git fetch remote
 git branch "${localbranch}" remote/"${branch}"
 git checkout "${localbranch}"
 git rebase "${treeish}"
-git log --reverse --pretty=format:%H origin/reviews | xargs -n 1 git cp --strategy recursive -Xtheirs
+git log --reverse --pretty=format:%H origin/master | xargs -n 1 git cherry-pick --strategy recursive -Xtheirs
