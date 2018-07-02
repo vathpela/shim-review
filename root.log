@@ -1,0 +1,665 @@
+INFO backend.py:909:  Mock Version: 1.1.16
+DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/
+DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.7-build-4793813-3084444/result
+INFO backend.py:277:  calling preinit hooks
+DEBUG backend.py:450:  create skeleton dirs
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/dbus
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/dbus
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/log
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/log
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lock/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lock/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/cache/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/cache/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp/ccache
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp/ccache
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/tmp
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum.repos.d
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum.repos.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG backend.py:472:  touch required files
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/fstab
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/log/yum.log
+DEBUG backend.py:292:  configure yum
+DEBUG backend.py:307:  configure yum rhnplugin
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum/pluginconf.d
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum/pluginconf.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG backend.py:398:  kver == 2.6.32-754.2.1.el6.x86_64
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.0Honl_ /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.0Honl_ /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:841:  ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root/', 'groupinstall', 'build']
+DEBUG util.py:300:  Executing command: ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root/', 'groupinstall', 'build', '--setopt=tsflags=nocontexts']
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:   Package                       Arch     Version                   Repository
+DEBUG util.py:257:                                                                             Size
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:  Installing:
+DEBUG util.py:257:   bash                          x86_64   4.2.46-31.el7             build   1.0 M
+DEBUG util.py:257:   bzip2                         x86_64   1.0.6-13.el7              build    51 k
+DEBUG util.py:257:   coreutils                     x86_64   8.22-23.el7               build   3.3 M
+DEBUG util.py:257:   cpio                          x86_64   2.11-27.el7               build   210 k
+DEBUG util.py:257:   diffutils                     x86_64   3.3-4.el7                 build   321 k
+DEBUG util.py:257:   findutils                     x86_64   1:4.5.11-6.el7            build   558 k
+DEBUG util.py:257:   gawk                          x86_64   4.0.2-4.el7_3.1           build   873 k
+DEBUG util.py:257:   gcc                           x86_64   4.8.5-36.el7_6.1          build    16 M
+DEBUG util.py:257:   gcc-c++                       x86_64   4.8.5-36.el7_6.1          build   7.2 M
+DEBUG util.py:257:   grep                          x86_64   2.20-3.el7                build   343 k
+DEBUG util.py:257:   gzip                          x86_64   1.5-10.el7                build   128 k
+DEBUG util.py:257:   info                          x86_64   5.1-5.el7                 build   232 k
+DEBUG util.py:257:   make                          x86_64   1:3.82-23.el7             build   419 k
+DEBUG util.py:257:   patch                         x86_64   2.7.1-10.el7_5            build   109 k
+DEBUG util.py:257:   redhat-release-server         x86_64   7.7-3.el7                 build    30 k
+DEBUG util.py:257:   redhat-rpm-config             noarch   9.1.0-87.el7              build    80 k
+DEBUG util.py:257:   rpm-build                     x86_64   4.11.3-35.el7             build   146 k
+DEBUG util.py:257:   sed                           x86_64   4.2.2-5.el7               build   230 k
+DEBUG util.py:257:   shadow-utils                  x86_64   2:4.1.5.1-25.el7_6.1      build   1.1 M
+DEBUG util.py:257:   tar                           x86_64   2:1.26-35.el7             build   845 k
+DEBUG util.py:257:   unzip                         x86_64   6.0-19.el7                build   169 k
+DEBUG util.py:257:   util-linux                    x86_64   2.23.2-59.el7_6.1         build   2.0 M
+DEBUG util.py:257:   which                         x86_64   2.20-7.el7                build    40 k
+DEBUG util.py:257:   xz                            x86_64   5.2.2-1.el7               build   228 k
+DEBUG util.py:257:  Installing for dependencies:
+DEBUG util.py:257:   acl                           x86_64   2.2.51-14.el7             build    80 k
+DEBUG util.py:257:   audit-libs                    x86_64   2.8.4-4.el7               build    99 k
+DEBUG util.py:257:   basesystem                    noarch   10.0-7.el7                build   3.8 k
+DEBUG util.py:257:   binutils                      x86_64   2.27-34.base.el7          build   5.9 M
+DEBUG util.py:257:   bzip2-libs                    x86_64   1.0.6-13.el7              build    39 k
+DEBUG util.py:257:   ca-certificates               noarch   2018.2.22-70.0.el7_5      build   391 k
+DEBUG util.py:257:   chkconfig                     x86_64   1.7.4-1.el7               build   180 k
+DEBUG util.py:257:   cpp                           x86_64   4.8.5-36.el7_6.1          build   5.9 M
+DEBUG util.py:257:   cracklib                      x86_64   2.9.0-11.el7              build    79 k
+DEBUG util.py:257:   cracklib-dicts                x86_64   2.9.0-11.el7              build   3.6 M
+DEBUG util.py:257:   cryptsetup-libs               x86_64   2.0.3-3.el7               build   337 k
+DEBUG util.py:257:   curl                          x86_64   7.29.0-51.el7             build   268 k
+DEBUG util.py:257:   cyrus-sasl-lib                x86_64   2.1.26-23.el7             build   154 k
+DEBUG util.py:257:   dbus                          x86_64   1:1.10.24-13.el7_6        build   244 k
+DEBUG util.py:257:   dbus-libs                     x86_64   1:1.10.24-13.el7_6        build   168 k
+DEBUG util.py:257:   device-mapper                 x86_64   7:1.02.149-10.el7_6.3     build   291 k
+DEBUG util.py:257:   device-mapper-libs            x86_64   7:1.02.149-10.el7_6.3     build   319 k
+DEBUG util.py:257:   dracut                        x86_64   033-554.el7               build   327 k
+DEBUG util.py:257:   dwz                           x86_64   0.11-3.el7                build    98 k
+DEBUG util.py:257:   elfutils                      x86_64   0.172-2.el7               build   298 k
+DEBUG util.py:257:   elfutils-default-yama-scope   noarch   0.172-2.el7               build    31 k
+DEBUG util.py:257:   elfutils-libelf               x86_64   0.172-2.el7               build   193 k
+DEBUG util.py:257:   elfutils-libs                 x86_64   0.172-2.el7               build   284 k
+DEBUG util.py:257:   expat                         x86_64   2.1.0-10.el7_3            build    80 k
+DEBUG util.py:257:   file                          x86_64   5.11-35.el7               build    56 k
+DEBUG util.py:257:   file-libs                     x86_64   5.11-35.el7               build   339 k
+DEBUG util.py:257:   filesystem                    x86_64   3.2-25.el7                build   1.0 M
+DEBUG util.py:257:   gdb                           x86_64   7.6.1-114.el7             build   2.4 M
+DEBUG util.py:257:   gdbm                          x86_64   1.10-8.el7                build    69 k
+DEBUG util.py:257:   glib2                         x86_64   2.56.1-2.el7              build   2.5 M
+DEBUG util.py:257:   glibc                         x86_64   2.17-260.el7_6.3          build   3.6 M
+DEBUG util.py:257:   glibc-common                  x86_64   2.17-260.el7_6.3          build    11 M
+DEBUG util.py:257:   glibc-devel                   x86_64   2.17-260.el7_6.3          build   1.1 M
+DEBUG util.py:257:   glibc-headers                 x86_64   2.17-260.el7_6.3          build   682 k
+DEBUG util.py:257:   gmp                           x86_64   1:6.0.0-15.el7            build   280 k
+DEBUG util.py:257:   gnupg2                        x86_64   2.0.22-5.el7_5            build   1.5 M
+DEBUG util.py:257:   groff-base                    x86_64   1.22.2-8.el7              build   941 k
+DEBUG util.py:257:   hardlink                      x86_64   1:1.0-19.el7              build    13 k
+DEBUG util.py:257:   json-c                        x86_64   0.11-4.el7_0              build    30 k
+DEBUG util.py:257:   kernel-headers                x86_64   3.10.0-957.10.1.el7       build   8.0 M
+DEBUG util.py:257:   keyutils-libs                 x86_64   1.5.8-3.el7               build    24 k
+DEBUG util.py:257:   kmod                          x86_64   20-23.el7                 build   120 k
+DEBUG util.py:257:   kmod-libs                     x86_64   20-23.el7                 build    49 k
+DEBUG util.py:257:   kpartx                        x86_64   0.4.9-123.el7             build    76 k
+DEBUG util.py:257:   krb5-libs                     x86_64   1.15.1-37.el7_6           build   802 k
+DEBUG util.py:257:   libacl                        x86_64   2.2.51-14.el7             build    26 k
+DEBUG util.py:257:   libassuan                     x86_64   2.1.0-3.el7               build    62 k
+DEBUG util.py:257:   libattr                       x86_64   2.4.46-13.el7             build    17 k
+DEBUG util.py:257:   libblkid                      x86_64   2.23.2-59.el7_6.1         build   180 k
+DEBUG util.py:257:   libcap                        x86_64   2.22-9.el7                build    46 k
+DEBUG util.py:257:   libcap-ng                     x86_64   0.7.5-4.el7               build    24 k
+DEBUG util.py:257:   libcom_err                    x86_64   1.42.9-13.el7             build    40 k
+DEBUG util.py:257:   libcurl                       x86_64   7.29.0-51.el7             build   220 k
+DEBUG util.py:257:   libdb                         x86_64   5.3.21-24.el7             build   718 k
+DEBUG util.py:257:   libdb-utils                   x86_64   5.3.21-24.el7             build   132 k
+DEBUG util.py:257:   libffi                        x86_64   3.0.13-18.el7             build    29 k
+DEBUG util.py:257:   libgcc                        x86_64   4.8.5-36.el7_6.1          build   101 k
+DEBUG util.py:257:   libgcrypt                     x86_64   1.5.3-14.el7              build   262 k
+DEBUG util.py:257:   libgomp                       x86_64   4.8.5-36.el7_6.1          build   156 k
+DEBUG util.py:257:   libgpg-error                  x86_64   1.12-3.el7                build    86 k
+DEBUG util.py:257:   libidn                        x86_64   1.28-4.el7                build   208 k
+DEBUG util.py:257:   libmount                      x86_64   2.23.2-59.el7_6.1         build   181 k
+DEBUG util.py:257:   libmpc                        x86_64   1.0.1-3.el7               build    49 k
+DEBUG util.py:257:   libpwquality                  x86_64   1.2.3-5.el7               build    84 k
+DEBUG util.py:257:   libselinux                    x86_64   2.5-14.1.el7              build   161 k
+DEBUG util.py:257:   libsemanage                   x86_64   2.5-14.el7                build   150 k
+DEBUG util.py:257:   libsepol                      x86_64   2.5-10.el7                build   296 k
+DEBUG util.py:257:   libsmartcols                  x86_64   2.23.2-59.el7_6.1         build   139 k
+DEBUG util.py:257:   libssh2                       x86_64   1.4.3-12.el7              build   133 k
+DEBUG util.py:257:   libstdc++                     x86_64   4.8.5-36.el7_6.1          build   304 k
+DEBUG util.py:257:   libstdc++-devel               x86_64   4.8.5-36.el7_6.1          build   1.5 M
+DEBUG util.py:257:   libtasn1                      x86_64   4.10-1.el7                build   319 k
+DEBUG util.py:257:   libuser                       x86_64   0.60-9.el7                build   399 k
+DEBUG util.py:257:   libutempter                   x86_64   1.1.6-4.el7               build    24 k
+DEBUG util.py:257:   libuuid                       x86_64   2.23.2-59.el7_6.1         build    81 k
+DEBUG util.py:257:   libverto                      x86_64   0.2.5-4.el7               build    15 k
+DEBUG util.py:257:   libxml2                       x86_64   2.9.1-6.el7_2.3           build   667 k
+DEBUG util.py:257:   lua                           x86_64   5.1.4-15.el7              build   200 k
+DEBUG util.py:257:   lz4                           x86_64   1.7.5-2.el7               build    97 k
+DEBUG util.py:257:   mpfr                          x86_64   3.1.1-4.el7               build   202 k
+DEBUG util.py:257:   ncurses                       x86_64   5.9-14.20130511.el7_4     build   303 k
+DEBUG util.py:257:   ncurses-base                  noarch   5.9-14.20130511.el7_4     build    67 k
+DEBUG util.py:257:   ncurses-libs                  x86_64   5.9-14.20130511.el7_4     build   315 k
+DEBUG util.py:257:   nspr                          x86_64   4.19.0-1.el7_5            build   126 k
+DEBUG util.py:257:   nss                           x86_64   3.36.0-7.1.el7_6          build   834 k
+DEBUG util.py:257:   nss-pem                       x86_64   1.0.3-5.el7_6.1           build    73 k
+DEBUG util.py:257:   nss-softokn                   x86_64   3.36.0-5.el7_5            build   314 k
+DEBUG util.py:257:   nss-softokn-freebl            x86_64   3.36.0-5.el7_5            build   221 k
+DEBUG util.py:257:   nss-sysinit                   x86_64   3.36.0-7.1.el7_6          build    61 k
+DEBUG util.py:257:   nss-tools                     x86_64   3.36.0-7.1.el7_6          build   514 k
+DEBUG util.py:257:   nss-util                      x86_64   3.36.0-2.el7              build    77 k
+DEBUG util.py:257:   openldap                      x86_64   2.4.44-21.el7_6           build   355 k
+DEBUG util.py:257:   openssl-libs                  x86_64   1:1.0.2k-16.el7_6.1       build   1.2 M
+DEBUG util.py:257:   p11-kit                       x86_64   0.23.5-3.el7              build   251 k
+DEBUG util.py:257:   p11-kit-trust                 x86_64   0.23.5-3.el7              build   128 k
+DEBUG util.py:257:   pam                           x86_64   1.1.8-22.el7              build   719 k
+DEBUG util.py:257:   pcre                          x86_64   8.32-17.el7               build   421 k
+DEBUG util.py:257:   perl                          x86_64   4:5.16.3-294.el7_6        build   8.0 M
+DEBUG util.py:257:   perl-Carp                     noarch   1.26-244.el7              build    18 k
+DEBUG util.py:257:   perl-Encode                   x86_64   2.51-7.el7                build   1.5 M
+DEBUG util.py:257:   perl-Exporter                 noarch   5.68-3.el7                build    27 k
+DEBUG util.py:257:   perl-File-Path                noarch   2.09-2.el7                build    25 k
+DEBUG util.py:257:   perl-File-Temp                noarch   0.23.01-3.el7             build    55 k
+DEBUG util.py:257:   perl-Filter                   x86_64   1.49-3.el7                build    75 k
+DEBUG util.py:257:   perl-Getopt-Long              noarch   2.40-3.el7                build    55 k
+DEBUG util.py:257:   perl-HTTP-Tiny                noarch   0.033-3.el7               build    37 k
+DEBUG util.py:257:   perl-PathTools                x86_64   3.40-5.el7                build    81 k
+DEBUG util.py:257:   perl-Pod-Escapes              noarch   1:1.04-294.el7_6          build    50 k
+DEBUG util.py:257:   perl-Pod-Perldoc              noarch   3.20-4.el7                build    86 k
+DEBUG util.py:257:   perl-Pod-Simple               noarch   1:3.28-4.el7              build   215 k
+DEBUG util.py:257:   perl-Pod-Usage                noarch   1.63-3.el7                build    26 k
+DEBUG util.py:257:   perl-Scalar-List-Utils        x86_64   1.27-248.el7              build    35 k
+DEBUG util.py:257:   perl-Socket                   x86_64   2.010-4.el7               build    48 k
+DEBUG util.py:257:   perl-Storable                 x86_64   2.45-3.el7                build    76 k
+DEBUG util.py:257:   perl-Text-ParseWords          noarch   3.29-4.el7                build    13 k
+DEBUG util.py:257:   perl-Thread-Queue             noarch   3.02-2.el7                build    16 k
+DEBUG util.py:257:   perl-Time-HiRes               x86_64   4:1.9725-3.el7            build    44 k
+DEBUG util.py:257:   perl-Time-Local               noarch   1.2300-2.el7              build    23 k
+DEBUG util.py:257:   perl-constant                 noarch   1.27-2.el7                build    18 k
+DEBUG util.py:257:   perl-libs                     x86_64   4:5.16.3-294.el7_6        build   687 k
+DEBUG util.py:257:   perl-macros                   x86_64   4:5.16.3-294.el7_6        build    43 k
+DEBUG util.py:257:   perl-parent                   noarch   1:0.225-244.el7           build    11 k
+DEBUG util.py:257:   perl-podlators                noarch   2.5.1-3.el7               build   111 k
+DEBUG util.py:257:   perl-srpm-macros              noarch   1-8.el7                   build   3.6 k
+DEBUG util.py:257:   perl-threads                  x86_64   1.87-4.el7                build    48 k
+DEBUG util.py:257:   perl-threads-shared           x86_64   1.43-6.el7                build    38 k
+DEBUG util.py:257:   pinentry                      x86_64   0.8.1-17.el7              build    72 k
+DEBUG util.py:257:   pkgconfig                     x86_64   1:0.27.1-4.el7            build    53 k
+DEBUG util.py:257:   popt                          x86_64   1.13-16.el7               build    41 k
+DEBUG util.py:257:   procps-ng                     x86_64   3.3.10-23.el7             build   290 k
+DEBUG util.py:257:   pth                           x86_64   2.0.7-23.el7              build    88 k
+DEBUG util.py:257:   python-libs                   x86_64   2.7.5-76.el7              build   5.6 M
+DEBUG util.py:257:   qrencode-libs                 x86_64   3.4.1-3.el7               build    49 k
+DEBUG util.py:257:   readline                      x86_64   6.2-10.el7                build   191 k
+DEBUG util.py:257:   rpm                           x86_64   4.11.3-35.el7             build   1.2 M
+DEBUG util.py:257:   rpm-build-libs                x86_64   4.11.3-35.el7             build   105 k
+DEBUG util.py:257:   rpm-libs                      x86_64   4.11.3-35.el7             build   276 k
+DEBUG util.py:257:   setup                         noarch   2.8.71-10.el7             build   165 k
+DEBUG util.py:257:   shared-mime-info              x86_64   1.8-4.el7                 build   311 k
+DEBUG util.py:257:   sqlite                        x86_64   3.7.17-8.el7              build   393 k
+DEBUG util.py:257:   systemd                       x86_64   219-62.el7_6.5            build   5.1 M
+DEBUG util.py:257:   systemd-libs                  x86_64   219-62.el7_6.5            build   406 k
+DEBUG util.py:257:   tzdata                        noarch   2018i-1.el7               build   489 k
+DEBUG util.py:257:   ustr                          x86_64   1.0.4-16.el7              build    91 k
+DEBUG util.py:257:   xz-libs                       x86_64   5.2.2-1.el7               build   102 k
+DEBUG util.py:257:   zip                           x86_64   3.0-11.el7                build   259 k
+DEBUG util.py:257:   zlib                          x86_64   1.2.7-18.el7              build    89 k
+DEBUG util.py:257:  Transaction Summary
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:  Install     171 Package(s)
+DEBUG util.py:257:  Total download size: 129 M
+DEBUG util.py:257:  Installed size: 460 M
+DEBUG util.py:257:  warning: /etc/hosts created as /etc/hosts.rpmnew
+DEBUG util.py:257:  Running in chroot, ignoring request.
+DEBUG util.py:257:  Installed:
+DEBUG util.py:257:    bash.x86_64 0:4.2.46-31.el7                                                   
+DEBUG util.py:257:    bzip2.x86_64 0:1.0.6-13.el7                                                   
+DEBUG util.py:257:    coreutils.x86_64 0:8.22-23.el7                                                
+DEBUG util.py:257:    cpio.x86_64 0:2.11-27.el7                                                     
+DEBUG util.py:257:    diffutils.x86_64 0:3.3-4.el7                                                  
+DEBUG util.py:257:    findutils.x86_64 1:4.5.11-6.el7                                               
+DEBUG util.py:257:    gawk.x86_64 0:4.0.2-4.el7_3.1                                                 
+DEBUG util.py:257:    gcc.x86_64 0:4.8.5-36.el7_6.1                                                 
+DEBUG util.py:257:    gcc-c++.x86_64 0:4.8.5-36.el7_6.1                                             
+DEBUG util.py:257:    grep.x86_64 0:2.20-3.el7                                                      
+DEBUG util.py:257:    gzip.x86_64 0:1.5-10.el7                                                      
+DEBUG util.py:257:    info.x86_64 0:5.1-5.el7                                                       
+DEBUG util.py:257:    make.x86_64 1:3.82-23.el7                                                     
+DEBUG util.py:257:    patch.x86_64 0:2.7.1-10.el7_5                                                 
+DEBUG util.py:257:    redhat-release-server.x86_64 0:7.7-3.el7                                      
+DEBUG util.py:257:    redhat-rpm-config.noarch 0:9.1.0-87.el7                                       
+DEBUG util.py:257:    rpm-build.x86_64 0:4.11.3-35.el7                                              
+DEBUG util.py:257:    sed.x86_64 0:4.2.2-5.el7                                                      
+DEBUG util.py:257:    shadow-utils.x86_64 2:4.1.5.1-25.el7_6.1                                      
+DEBUG util.py:257:    tar.x86_64 2:1.26-35.el7                                                      
+DEBUG util.py:257:    unzip.x86_64 0:6.0-19.el7                                                     
+DEBUG util.py:257:    util-linux.x86_64 0:2.23.2-59.el7_6.1                                         
+DEBUG util.py:257:    which.x86_64 0:2.20-7.el7                                                     
+DEBUG util.py:257:    xz.x86_64 0:5.2.2-1.el7                                                       
+DEBUG util.py:257:  Dependency Installed:
+DEBUG util.py:257:    acl.x86_64 0:2.2.51-14.el7                                                    
+DEBUG util.py:257:    audit-libs.x86_64 0:2.8.4-4.el7                                               
+DEBUG util.py:257:    basesystem.noarch 0:10.0-7.el7                                                
+DEBUG util.py:257:    binutils.x86_64 0:2.27-34.base.el7                                            
+DEBUG util.py:257:    bzip2-libs.x86_64 0:1.0.6-13.el7                                              
+DEBUG util.py:257:    ca-certificates.noarch 0:2018.2.22-70.0.el7_5                                 
+DEBUG util.py:257:    chkconfig.x86_64 0:1.7.4-1.el7                                                
+DEBUG util.py:257:    cpp.x86_64 0:4.8.5-36.el7_6.1                                                 
+DEBUG util.py:257:    cracklib.x86_64 0:2.9.0-11.el7                                                
+DEBUG util.py:257:    cracklib-dicts.x86_64 0:2.9.0-11.el7                                          
+DEBUG util.py:257:    cryptsetup-libs.x86_64 0:2.0.3-3.el7                                          
+DEBUG util.py:257:    curl.x86_64 0:7.29.0-51.el7                                                   
+DEBUG util.py:257:    cyrus-sasl-lib.x86_64 0:2.1.26-23.el7                                         
+DEBUG util.py:257:    dbus.x86_64 1:1.10.24-13.el7_6                                                
+DEBUG util.py:257:    dbus-libs.x86_64 1:1.10.24-13.el7_6                                           
+DEBUG util.py:257:    device-mapper.x86_64 7:1.02.149-10.el7_6.3                                    
+DEBUG util.py:257:    device-mapper-libs.x86_64 7:1.02.149-10.el7_6.3                               
+DEBUG util.py:257:    dracut.x86_64 0:033-554.el7                                                   
+DEBUG util.py:257:    dwz.x86_64 0:0.11-3.el7                                                       
+DEBUG util.py:257:    elfutils.x86_64 0:0.172-2.el7                                                 
+DEBUG util.py:257:    elfutils-default-yama-scope.noarch 0:0.172-2.el7                              
+DEBUG util.py:257:    elfutils-libelf.x86_64 0:0.172-2.el7                                          
+DEBUG util.py:257:    elfutils-libs.x86_64 0:0.172-2.el7                                            
+DEBUG util.py:257:    expat.x86_64 0:2.1.0-10.el7_3                                                 
+DEBUG util.py:257:    file.x86_64 0:5.11-35.el7                                                     
+DEBUG util.py:257:    file-libs.x86_64 0:5.11-35.el7                                                
+DEBUG util.py:257:    filesystem.x86_64 0:3.2-25.el7                                                
+DEBUG util.py:257:    gdb.x86_64 0:7.6.1-114.el7                                                    
+DEBUG util.py:257:    gdbm.x86_64 0:1.10-8.el7                                                      
+DEBUG util.py:257:    glib2.x86_64 0:2.56.1-2.el7                                                   
+DEBUG util.py:257:    glibc.x86_64 0:2.17-260.el7_6.3                                               
+DEBUG util.py:257:    glibc-common.x86_64 0:2.17-260.el7_6.3                                        
+DEBUG util.py:257:    glibc-devel.x86_64 0:2.17-260.el7_6.3                                         
+DEBUG util.py:257:    glibc-headers.x86_64 0:2.17-260.el7_6.3                                       
+DEBUG util.py:257:    gmp.x86_64 1:6.0.0-15.el7                                                     
+DEBUG util.py:257:    gnupg2.x86_64 0:2.0.22-5.el7_5                                                
+DEBUG util.py:257:    groff-base.x86_64 0:1.22.2-8.el7                                              
+DEBUG util.py:257:    hardlink.x86_64 1:1.0-19.el7                                                  
+DEBUG util.py:257:    json-c.x86_64 0:0.11-4.el7_0                                                  
+DEBUG util.py:257:    kernel-headers.x86_64 0:3.10.0-957.10.1.el7                                   
+DEBUG util.py:257:    keyutils-libs.x86_64 0:1.5.8-3.el7                                            
+DEBUG util.py:257:    kmod.x86_64 0:20-23.el7                                                       
+DEBUG util.py:257:    kmod-libs.x86_64 0:20-23.el7                                                  
+DEBUG util.py:257:    kpartx.x86_64 0:0.4.9-123.el7                                                 
+DEBUG util.py:257:    krb5-libs.x86_64 0:1.15.1-37.el7_6                                            
+DEBUG util.py:257:    libacl.x86_64 0:2.2.51-14.el7                                                 
+DEBUG util.py:257:    libassuan.x86_64 0:2.1.0-3.el7                                                
+DEBUG util.py:257:    libattr.x86_64 0:2.4.46-13.el7                                                
+DEBUG util.py:257:    libblkid.x86_64 0:2.23.2-59.el7_6.1                                           
+DEBUG util.py:257:    libcap.x86_64 0:2.22-9.el7                                                    
+DEBUG util.py:257:    libcap-ng.x86_64 0:0.7.5-4.el7                                                
+DEBUG util.py:257:    libcom_err.x86_64 0:1.42.9-13.el7                                             
+DEBUG util.py:257:    libcurl.x86_64 0:7.29.0-51.el7                                                
+DEBUG util.py:257:    libdb.x86_64 0:5.3.21-24.el7                                                  
+DEBUG util.py:257:    libdb-utils.x86_64 0:5.3.21-24.el7                                            
+DEBUG util.py:257:    libffi.x86_64 0:3.0.13-18.el7                                                 
+DEBUG util.py:257:    libgcc.x86_64 0:4.8.5-36.el7_6.1                                              
+DEBUG util.py:257:    libgcrypt.x86_64 0:1.5.3-14.el7                                               
+DEBUG util.py:257:    libgomp.x86_64 0:4.8.5-36.el7_6.1                                             
+DEBUG util.py:257:    libgpg-error.x86_64 0:1.12-3.el7                                              
+DEBUG util.py:257:    libidn.x86_64 0:1.28-4.el7                                                    
+DEBUG util.py:257:    libmount.x86_64 0:2.23.2-59.el7_6.1                                           
+DEBUG util.py:257:    libmpc.x86_64 0:1.0.1-3.el7                                                   
+DEBUG util.py:257:    libpwquality.x86_64 0:1.2.3-5.el7                                             
+DEBUG util.py:257:    libselinux.x86_64 0:2.5-14.1.el7                                              
+DEBUG util.py:257:    libsemanage.x86_64 0:2.5-14.el7                                               
+DEBUG util.py:257:    libsepol.x86_64 0:2.5-10.el7                                                  
+DEBUG util.py:257:    libsmartcols.x86_64 0:2.23.2-59.el7_6.1                                       
+DEBUG util.py:257:    libssh2.x86_64 0:1.4.3-12.el7                                                 
+DEBUG util.py:257:    libstdc++.x86_64 0:4.8.5-36.el7_6.1                                           
+DEBUG util.py:257:    libstdc++-devel.x86_64 0:4.8.5-36.el7_6.1                                     
+DEBUG util.py:257:    libtasn1.x86_64 0:4.10-1.el7                                                  
+DEBUG util.py:257:    libuser.x86_64 0:0.60-9.el7                                                   
+DEBUG util.py:257:    libutempter.x86_64 0:1.1.6-4.el7                                              
+DEBUG util.py:257:    libuuid.x86_64 0:2.23.2-59.el7_6.1                                            
+DEBUG util.py:257:    libverto.x86_64 0:0.2.5-4.el7                                                 
+DEBUG util.py:257:    libxml2.x86_64 0:2.9.1-6.el7_2.3                                              
+DEBUG util.py:257:    lua.x86_64 0:5.1.4-15.el7                                                     
+DEBUG util.py:257:    lz4.x86_64 0:1.7.5-2.el7                                                      
+DEBUG util.py:257:    mpfr.x86_64 0:3.1.1-4.el7                                                     
+DEBUG util.py:257:    ncurses.x86_64 0:5.9-14.20130511.el7_4                                        
+DEBUG util.py:257:    ncurses-base.noarch 0:5.9-14.20130511.el7_4                                   
+DEBUG util.py:257:    ncurses-libs.x86_64 0:5.9-14.20130511.el7_4                                   
+DEBUG util.py:257:    nspr.x86_64 0:4.19.0-1.el7_5                                                  
+DEBUG util.py:257:    nss.x86_64 0:3.36.0-7.1.el7_6                                                 
+DEBUG util.py:257:    nss-pem.x86_64 0:1.0.3-5.el7_6.1                                              
+DEBUG util.py:257:    nss-softokn.x86_64 0:3.36.0-5.el7_5                                           
+DEBUG util.py:257:    nss-softokn-freebl.x86_64 0:3.36.0-5.el7_5                                    
+DEBUG util.py:257:    nss-sysinit.x86_64 0:3.36.0-7.1.el7_6                                         
+DEBUG util.py:257:    nss-tools.x86_64 0:3.36.0-7.1.el7_6                                           
+DEBUG util.py:257:    nss-util.x86_64 0:3.36.0-2.el7                                                
+DEBUG util.py:257:    openldap.x86_64 0:2.4.44-21.el7_6                                             
+DEBUG util.py:257:    openssl-libs.x86_64 1:1.0.2k-16.el7_6.1                                       
+DEBUG util.py:257:    p11-kit.x86_64 0:0.23.5-3.el7                                                 
+DEBUG util.py:257:    p11-kit-trust.x86_64 0:0.23.5-3.el7                                           
+DEBUG util.py:257:    pam.x86_64 0:1.1.8-22.el7                                                     
+DEBUG util.py:257:    pcre.x86_64 0:8.32-17.el7                                                     
+DEBUG util.py:257:    perl.x86_64 4:5.16.3-294.el7_6                                                
+DEBUG util.py:257:    perl-Carp.noarch 0:1.26-244.el7                                               
+DEBUG util.py:257:    perl-Encode.x86_64 0:2.51-7.el7                                               
+DEBUG util.py:257:    perl-Exporter.noarch 0:5.68-3.el7                                             
+DEBUG util.py:257:    perl-File-Path.noarch 0:2.09-2.el7                                            
+DEBUG util.py:257:    perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+DEBUG util.py:257:    perl-Filter.x86_64 0:1.49-3.el7                                               
+DEBUG util.py:257:    perl-Getopt-Long.noarch 0:2.40-3.el7                                          
+DEBUG util.py:257:    perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+DEBUG util.py:257:    perl-PathTools.x86_64 0:3.40-5.el7                                            
+DEBUG util.py:257:    perl-Pod-Escapes.noarch 1:1.04-294.el7_6                                      
+DEBUG util.py:257:    perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+DEBUG util.py:257:    perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+DEBUG util.py:257:    perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+DEBUG util.py:257:    perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+DEBUG util.py:257:    perl-Socket.x86_64 0:2.010-4.el7                                              
+DEBUG util.py:257:    perl-Storable.x86_64 0:2.45-3.el7                                             
+DEBUG util.py:257:    perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+DEBUG util.py:257:    perl-Thread-Queue.noarch 0:3.02-2.el7                                         
+DEBUG util.py:257:    perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+DEBUG util.py:257:    perl-Time-Local.noarch 0:1.2300-2.el7                                         
+DEBUG util.py:257:    perl-constant.noarch 0:1.27-2.el7                                             
+DEBUG util.py:257:    perl-libs.x86_64 4:5.16.3-294.el7_6                                           
+DEBUG util.py:257:    perl-macros.x86_64 4:5.16.3-294.el7_6                                         
+DEBUG util.py:257:    perl-parent.noarch 1:0.225-244.el7                                            
+DEBUG util.py:257:    perl-podlators.noarch 0:2.5.1-3.el7                                           
+DEBUG util.py:257:    perl-srpm-macros.noarch 0:1-8.el7                                             
+DEBUG util.py:257:    perl-threads.x86_64 0:1.87-4.el7                                              
+DEBUG util.py:257:    perl-threads-shared.x86_64 0:1.43-6.el7                                       
+DEBUG util.py:257:    pinentry.x86_64 0:0.8.1-17.el7                                                
+DEBUG util.py:257:    pkgconfig.x86_64 1:0.27.1-4.el7                                               
+DEBUG util.py:257:    popt.x86_64 0:1.13-16.el7                                                     
+DEBUG util.py:257:    procps-ng.x86_64 0:3.3.10-23.el7                                              
+DEBUG util.py:257:    pth.x86_64 0:2.0.7-23.el7                                                     
+DEBUG util.py:257:    python-libs.x86_64 0:2.7.5-76.el7                                             
+DEBUG util.py:257:    qrencode-libs.x86_64 0:3.4.1-3.el7                                            
+DEBUG util.py:257:    readline.x86_64 0:6.2-10.el7                                                  
+DEBUG util.py:257:    rpm.x86_64 0:4.11.3-35.el7                                                    
+DEBUG util.py:257:    rpm-build-libs.x86_64 0:4.11.3-35.el7                                         
+DEBUG util.py:257:    rpm-libs.x86_64 0:4.11.3-35.el7                                               
+DEBUG util.py:257:    setup.noarch 0:2.8.71-10.el7                                                  
+DEBUG util.py:257:    shared-mime-info.x86_64 0:1.8-4.el7                                           
+DEBUG util.py:257:    sqlite.x86_64 0:3.7.17-8.el7                                                  
+DEBUG util.py:257:    systemd.x86_64 0:219-62.el7_6.5                                               
+DEBUG util.py:257:    systemd-libs.x86_64 0:219-62.el7_6.5                                          
+DEBUG util.py:257:    tzdata.noarch 0:2018i-1.el7                                                   
+DEBUG util.py:257:    ustr.x86_64 0:1.0.4-16.el7                                                    
+DEBUG util.py:257:    xz-libs.x86_64 0:5.2.2-1.el7                                                  
+DEBUG util.py:257:    zip.x86_64 0:3.0-11.el7                                                       
+DEBUG util.py:257:    zlib.x86_64 0:1.2.7-18.el7                                                    
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir
+DEBUG util.py:300:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild']
+DEBUG util.py:257:  userdel: user 'mockbuild' does not exist
+DEBUG util.py:340:  Child returncode was: 6
+DEBUG util.py:300:  Executing command: ['/usr/sbin/groupdel', 'mockbuild']
+DEBUG util.py:257:  groupdel: group 'mockbuild' does not exist
+DEBUG util.py:340:  Child returncode was: 6
+DEBUG util.py:300:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mockbuild']
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: /usr/sbin/useradd -o -m -u 248 -g 135 -d /builddir -n mockbuild
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/RPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/RPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SRPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SRPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SOURCES
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SOURCES
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SPECS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SPECS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILD
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILD
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILDROOT
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILDROOT
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/originals
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/originals
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:111:  kill orphans
+INFO backend.py:909:  Mock Version: 1.1.16
+DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/
+DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.7-build-4793813-3084444/result
+INFO backend.py:277:  calling preinit hooks
+DEBUG backend.py:450:  create skeleton dirs
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lib/dbus
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/log
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/lock/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/cache/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/tmp/ccache
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum.repos.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG backend.py:472:  touch required files
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/fstab
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/var/log/yum.log
+DEBUG backend.py:292:  configure yum
+DEBUG backend.py:307:  configure yum rhnplugin
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/etc/yum/pluginconf.d
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG backend.py:398:  kver == 2.6.32-754.2.1.el6.x86_64
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.XyY0xX /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.XyY0xX /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir
+DEBUG util.py:300:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild']
+DEBUG util.py:257:  userdel: mockbuild home directory (/builddir) not found
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: ['/usr/sbin/groupdel', 'mockbuild']
+DEBUG util.py:257:  groupdel: group 'mockbuild' does not exist
+DEBUG util.py:340:  Child returncode was: 6
+DEBUG util.py:300:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mockbuild']
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: /usr/sbin/useradd -o -m -u 248 -g 135 -d /builddir -n mockbuild
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/RPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/RPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SRPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SRPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SOURCES
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SOURCES
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SPECS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/SPECS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILD
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILD
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILDROOT
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/BUILDROOT
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/originals
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/builddir/build/originals
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG backend.py:398:  kver == 2.6.32-754.2.1.el6.x86_64
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.XyY0xX /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.XyY0xX /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: ['rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-15-2.el7.src.rpm']
+DEBUG util.py:257:  Updating / installing...
+DEBUG util.py:257:  shim-15-2.el7                         ########################################
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:841:  ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root/', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root///builddir/build/SRPMS/shim-15-2.el7.src.rpm']
+DEBUG util.py:300:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root/', '/mnt/build/mock/rhel-7.7-build-4793813-3084444/root///builddir/build/SRPMS/shim-15-2.el7.src.rpm']
+DEBUG util.py:257:  Getting requirements for shim-15-2.el7.src
+DEBUG util.py:257:   --> git-1.8.3.1-20.el7.x86_64
+DEBUG util.py:257:   --> 1:openssl-devel-1.0.2k-16.el7_6.1.x86_64
+DEBUG util.py:257:   --> 1:openssl-1.0.2k-16.el7_6.1.x86_64
+DEBUG util.py:257:   --> pesign-0.109-10.el7.x86_64
+DEBUG util.py:257:   --> 1:gnu-efi-3.0.8-2.el7.x86_64
+DEBUG util.py:257:   --> 1:gnu-efi-devel-3.0.8-2.el7.x86_64
+DEBUG util.py:257:   --> 2:vim-common-7.4.160-5.el7.x86_64
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:   Package              Arch    Version                              Repository
+DEBUG util.py:257:                                                                             Size
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:  Installing:
+DEBUG util.py:257:   git                  x86_64  1.8.3.1-20.el7                       build  4.4 M
+DEBUG util.py:257:   gnu-efi              x86_64  1:3.0.8-2.el7                        build   65 k
+DEBUG util.py:257:   gnu-efi-devel        x86_64  1:3.0.8-2.el7                        build  108 k
+DEBUG util.py:257:   openssl              x86_64  1:1.0.2k-16.el7_6.1                  build  492 k
+DEBUG util.py:257:   openssl-devel        x86_64  1:1.0.2k-16.el7_6.1                  build  1.5 M
+DEBUG util.py:257:   pesign               x86_64  0.109-10.el7                         build   88 k
+DEBUG util.py:257:   vim-common           x86_64  2:7.4.160-5.el7                      build  5.9 M
+DEBUG util.py:257:  Installing for dependencies:
+DEBUG util.py:257:   coolkey              x86_64  1.1.0-40.el7                         build  115 k
+DEBUG util.py:257:   fipscheck            x86_64  1.4.1-6.el7                          build   20 k
+DEBUG util.py:257:   fipscheck-lib        x86_64  1.4.1-6.el7                          build  9.6 k
+DEBUG util.py:257:   keyutils-libs-devel  x86_64  1.5.8-3.el7                          build   36 k
+DEBUG util.py:257:   krb5-devel           x86_64  1.15.1-37.el7_6                      build  270 k
+DEBUG util.py:257:   less                 x86_64  458-9.el7                            build  119 k
+DEBUG util.py:257:   libcom_err-devel     x86_64  1.42.9-13.el7                        build   30 k
+DEBUG util.py:257:   libedit              x86_64  3.0-12.20121213cvs.el7               build   91 k
+DEBUG util.py:257:   libkadm5             x86_64  1.15.1-37.el7_6                      build  177 k
+DEBUG util.py:257:   libselinux-devel     x86_64  2.5-14.1.el7                         build  186 k
+DEBUG util.py:257:   libsepol-devel       x86_64  2.5-10.el7                           build   76 k
+DEBUG util.py:257:   libusbx              x86_64  1.0.21-1.el7                         build   60 k
+DEBUG util.py:257:   libverto-devel       x86_64  0.2.5-4.el7                          build   10 k
+DEBUG util.py:257:   opensc               x86_64  0.16.0-10.20170227git777e2a3.el7     build  1.0 M
+DEBUG util.py:257:   openssh              x86_64  7.4p1-16.el7                         build  508 k
+DEBUG util.py:257:   openssh-clients      x86_64  7.4p1-16.el7                         build  653 k
+DEBUG util.py:257:   pcre-devel           x86_64  8.32-17.el7                          build  479 k
+DEBUG util.py:257:   pcsc-lite            x86_64  1.8.8-8.el7                          build  189 k
+DEBUG util.py:257:   pcsc-lite-ccid       x86_64  1.4.10-14.el7                        build  158 k
+DEBUG util.py:257:   pcsc-lite-libs       x86_64  1.8.8-8.el7                          build   33 k
+DEBUG util.py:257:   perl-Error           noarch  1:0.17020-2.el7                      build   31 k
+DEBUG util.py:257:   perl-Git             noarch  1.8.3.1-20.el7                       build   54 k
+DEBUG util.py:257:   perl-TermReadKey     x86_64  2.30-20.el7                          build   30 k
+DEBUG util.py:257:   python               x86_64  2.7.5-76.el7                         build   93 k
+DEBUG util.py:257:   rsync                x86_64  3.1.2-4.el7                          build  402 k
+DEBUG util.py:257:   vim-filesystem       x86_64  2:7.4.160-5.el7                      build  9.2 k
+DEBUG util.py:257:   zlib-devel           x86_64  1.2.7-18.el7                         build   49 k
+DEBUG util.py:257:  Transaction Summary
+DEBUG util.py:257:  ================================================================================
+DEBUG util.py:257:  Install      34 Package(s)
+DEBUG util.py:257:  Total download size: 17 M
+DEBUG util.py:257:  Installed size: 62 M
+DEBUG util.py:257:  Installed:
+DEBUG util.py:257:    git.x86_64 0:1.8.3.1-20.el7               gnu-efi.x86_64 1:3.0.8-2.el7       
+DEBUG util.py:257:    gnu-efi-devel.x86_64 1:3.0.8-2.el7        openssl.x86_64 1:1.0.2k-16.el7_6.1 
+DEBUG util.py:257:    openssl-devel.x86_64 1:1.0.2k-16.el7_6.1  pesign.x86_64 0:0.109-10.el7       
+DEBUG util.py:257:    vim-common.x86_64 2:7.4.160-5.el7        
+DEBUG util.py:257:  Dependency Installed:
+DEBUG util.py:257:    coolkey.x86_64 0:1.1.0-40.el7                                                 
+DEBUG util.py:257:    fipscheck.x86_64 0:1.4.1-6.el7                                                
+DEBUG util.py:257:    fipscheck-lib.x86_64 0:1.4.1-6.el7                                            
+DEBUG util.py:257:    keyutils-libs-devel.x86_64 0:1.5.8-3.el7                                      
+DEBUG util.py:257:    krb5-devel.x86_64 0:1.15.1-37.el7_6                                           
+DEBUG util.py:257:    less.x86_64 0:458-9.el7                                                       
+DEBUG util.py:257:    libcom_err-devel.x86_64 0:1.42.9-13.el7                                       
+DEBUG util.py:257:    libedit.x86_64 0:3.0-12.20121213cvs.el7                                       
+DEBUG util.py:257:    libkadm5.x86_64 0:1.15.1-37.el7_6                                             
+DEBUG util.py:257:    libselinux-devel.x86_64 0:2.5-14.1.el7                                        
+DEBUG util.py:257:    libsepol-devel.x86_64 0:2.5-10.el7                                            
+DEBUG util.py:257:    libusbx.x86_64 0:1.0.21-1.el7                                                 
+DEBUG util.py:257:    libverto-devel.x86_64 0:0.2.5-4.el7                                           
+DEBUG util.py:257:    opensc.x86_64 0:0.16.0-10.20170227git777e2a3.el7                              
+DEBUG util.py:257:    openssh.x86_64 0:7.4p1-16.el7                                                 
+DEBUG util.py:257:    openssh-clients.x86_64 0:7.4p1-16.el7                                         
+DEBUG util.py:257:    pcre-devel.x86_64 0:8.32-17.el7                                               
+DEBUG util.py:257:    pcsc-lite.x86_64 0:1.8.8-8.el7                                                
+DEBUG util.py:257:    pcsc-lite-ccid.x86_64 0:1.4.10-14.el7                                         
+DEBUG util.py:257:    pcsc-lite-libs.x86_64 0:1.8.8-8.el7                                           
+DEBUG util.py:257:    perl-Error.noarch 1:0.17020-2.el7                                             
+DEBUG util.py:257:    perl-Git.noarch 0:1.8.3.1-20.el7                                              
+DEBUG util.py:257:    perl-TermReadKey.x86_64 0:2.30-20.el7                                         
+DEBUG util.py:257:    python.x86_64 0:2.7.5-76.el7                                                  
+DEBUG util.py:257:    rsync.x86_64 0:3.1.2-4.el7                                                    
+DEBUG util.py:257:    vim-filesystem.x86_64 2:7.4.160-5.el7                                         
+DEBUG util.py:257:    zlib-devel.x86_64 0:1.2.7-18.el7                                              
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG backend.py:622:  Copying packages to result dir
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/shm
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/dev/pts
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc/filesystems
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/sys
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.7-build-4793813-3084444/root/proc
+DEBUG util.py:340:  Child returncode was: 0
+DEBUG util.py:111:  kill orphans

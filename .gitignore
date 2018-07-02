@@ -1,2 +1,5 @@
 .*.sw?
 *~
+repo*/
+shim-15-1.el7.src.rpm
+shim-15.tar.bz2
