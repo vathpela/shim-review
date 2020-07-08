@@ -4,10 +4,12 @@ This repo is for review of requests for signing shim.  To create a request for r
 - edit the template below
 - add the shim.efi to be signed
 - add build logs
+- add any additional binaries/certificates/hashes that may be needed
 - commit all of that
 - tag it with a tag of the form "myorg-shim-arch-YYYYMMDD"
-- push that to github
-- file an issue at https://github.com/rhboot/shim-review/issues with a link to your branch
+- push that to keybase
+- use channel names under your vendor/company to discuss the review process and to get an approval
+- approval is ready when you have Approved-by: Peter Jones <pjones@redhat.com> or TODO: add list of confirmed approvers
 
 Note that we really only have experience with using grub2 on Linux, so asking
 us to endorse anything else for signing is going to require some convincing on
