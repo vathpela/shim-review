@@ -64,7 +64,17 @@ What patches are being applied and why:
 [your text here]
 
 -------------------------------------------------------------------------------
-If bootloader, shim loading is, grub: is CVE-2020-10713 fixed ?
+If bootloader, shim loading is, grub2: is CVE-2020-10713 fixed ?
+-------------------------------------------------------------------------------
+[your text here]
+
+-------------------------------------------------------------------------------
+If bootloader, shim loading is, grub2, and previous shims were trusting affected
+by CVE-2020-10713 grub2:
+* were old shims hashes provided to Microsoft for verification
+  and to be added to future DBX update ?
+* Does your new chain of trust disallow booting old, affected by CVE-2020-10713,
+  grub2 builds ?
 -------------------------------------------------------------------------------
 [your text here]
 
@@ -72,6 +82,8 @@ If bootloader, shim loading is, grub: is CVE-2020-10713 fixed ?
 If your boot chain of trust includes linux kernel, is
 "efi: Restrict efivar_ssdt_load when the kernel is locked down"
 upstream commit 1957a85b0032a81e6482ca4aab883643b8dae06e applied ?
+Is "ACPI: configfs: Disallow loading ACPI tables when locked down"
+upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 applied ?
 -------------------------------------------------------------------------------
 [your text here]
 
