@@ -4,10 +4,12 @@ This repo is for review of requests for signing shim.  To create a request for r
 - edit the template below
 - add the shim.efi to be signed
 - add build logs
+- add any additional binaries/certificates/hashes that may be needed
 - commit all of that
 - tag it with a tag of the form "myorg-shim-arch-YYYYMMDD"
-- push that to github
-- file an issue at https://github.com/rhboot/shim-review/issues with a link to your tag
+- push that to keybase
+- use channel names under your vendor/company to discuss the review process and to get an approval
+- approval is ready when you have Approved-by: Peter Jones <pjones@redhat.com> or TODO: add list of confirmed approvers
 
 Note that we really only have experience with using grub2 on Linux, so asking
 us to endorse anything else for signing is going to require some convincing on
@@ -76,6 +78,47 @@ What patches are being applied and why:
     in loading fwupd, or anything else specified as an argument (LP: #1864223)
 
 -------------------------------------------------------------------------------
+If bootloader, shim loading is, grub2: is CVE-2020-10713 fixed ?
+-------------------------------------------------------------------------------
+Yes.
+
+-------------------------------------------------------------------------------
+If bootloader, shim loading is, grub2, and previous shims were trusting affected
+by CVE-2020-10713 grub2:
+* were old shims hashes provided to Microsoft for verification
+  and to be added to future DBX update ?
+* Does your new chain of trust disallow booting old, affected by CVE-2020-10713,
+  grub2 builds ?
+-------------------------------------------------------------------------------
+All our shims include Canonical Ltd. Master Certificate Authority.
+It does not sign any vulnerable grubs.
+It has signed "Canonical Ltd. Signing Certificate" (2012) intermediate certificate.
+That certificate has signed vulnerable grubs.
+The intermediate certificate has been submitted for revocation via dbx update.
+Fixed grubs will be signed with a new intermediate certificate, that
+was never yet signed any grubs.
+As long as the upcomming DBX update is applied, all our shims will
+disallow booting vulnerable grub2 builds signed by Canonical.
+
+-------------------------------------------------------------------------------
+If your boot chain of trust includes linux kernel, is
+"efi: Restrict efivar_ssdt_load when the kernel is locked down"
+upstream commit 1957a85b0032a81e6482ca4aab883643b8dae06e applied ?
+Is "ACPI: configfs: Disallow loading ACPI tables when locked down"
+upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 applied ?
+-------------------------------------------------------------------------------
+Yes, and yes. Rollout is in progress, to be completed by CRD date.
+
+
+-------------------------------------------------------------------------------
+If you use vendor_db functionality of providing multiple certificates and/or
+hashes please briefly describe your certificate setup. If there are whitelisted hashes
+please provide exact binaries for which hashes are created via file sharing service,
+available in public with anonymous access for verification
+-------------------------------------------------------------------------------
+`vendor_db` functionality is not used.
+
+-------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
 Ubuntu 20.04
@@ -132,3 +175,14 @@ Put info about what kernel you're using, including which patches it includes to 
 -------------------------------------------------------------------------------
 Varying Linux kernel versions; see https://launchpad.net/ubuntu/+source/linux
 
+-------------------------------------------------------------------------------
+Add any additional information you think we may need to validate this shim
+-------------------------------------------------------------------------------
+This shim submission is identical to the https://github.com/rhboot/shim-review/issues/92
+
+Which itself is a small bugfix on top of the previously approved and
+signed https://github.com/rhboot/shim-review/issues/82
+
+As our certificate strategy is unchanged, and has always allowed dbx
+based revocation of intermediate signing certificates, without
+revoking our shims or the CA included inside them.
