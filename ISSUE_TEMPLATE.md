@@ -44,7 +44,7 @@ No
 `[your text here]` FIXME
 
 ###### What changes were made since your SHIM was last signed?
-Signing key was changed to ensure no old grub/kernel can be booted
+Signing key was changed to ensure no old grub/kernel can not be booted
 
 ###### What is the hash of your final SHIM binary?
 3166ee4ce65d10105deee3a0163e236ac872e2c45652dc1dd78f8ce984463c12 FIXME

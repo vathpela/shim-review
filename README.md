@@ -96,7 +96,7 @@ upstream commit 1957a85b0032a81e6482ca4aab883643b8dae06e applied ?
 Is "ACPI: configfs: Disallow loading ACPI tables when locked down"
 upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 applied ?
 -------------------------------------------------------------------------------
-We have that in current kernels and all older products will get these patches in the next update
+Both are applied
 
 -------------------------------------------------------------------------------
 If you use vendor_db functionality of providing multiple certificates and/or
@@ -104,12 +104,23 @@ hashes please briefly describe your certificate setup. If there are whitelisted 
 please provide exact binaries for which hashes are created via file sharing service,
 available in public with anonymous access for verification
 -------------------------------------------------------------------------------
-[your text here] FIXME
+We don't use this
 
 -------------------------------------------------------------------------------
 What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as close as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 -------------------------------------------------------------------------------
-[your text here]
+download SLES 15.2 docker image here:
+https://users.suse.com/~jsegitz/2020.07_shim/Xu2SeiziQuu1ER8bgui1Ib9m/sles_docker_image.tar.xz
+Import it:
+xz -d sles_docker_image.tar.xz
+docker import sles_docker_image.tar sles:shim
+docker run -it sles:shim  /bin/sh
+
+The build packages are already under /usr/src/packages/RPMS/x86_64
+To build them anew:
+rpmbuild -bb /usr/src/packages/SOURCES/*spec
+cd /shim/ &&  unrpm /usr/src/packages/RPMS/x86_64/shim-15+git47-0.x86_64.rpm
+sha256sum usr/share/efi/x86_64/shim-sles.efi
 
 -------------------------------------------------------------------------------
 Which files in this repo are the logs for your build?   This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
