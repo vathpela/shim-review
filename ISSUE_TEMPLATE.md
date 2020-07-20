@@ -1,9 +1,10 @@
 Make sure you have provided the following information:
 
- - [x] link to your code branch cloned from rhboot/shim-review in the form user/repo@tag
+ - [x] link to your code branch cloned from keybase shim-review repo
  - [x] completed README.md file with the necessary information
  - [x] shim.efi to be signed
- - [x] public portion of your certificate embedded in shim (the file passed to VENDOR_CERT_FILE)
+ - [x] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
+ - [x] binaries, for which hashes are added do vendor_db ( if you use vendor_db and have hashes whitelisted )
  - [x] any extra patches to shim via your own git tree or as files
  - [x] any extra patches to grub via your own git tree or as files
  - [x] build logs
@@ -27,6 +28,21 @@ Shim binaries do not include private portions of the key.
 
 ###### Do you use EV certificates as embedded certificates in the SHIM?
 Yes
+
+###### If you use new vendor_db functionality, are any hashes whitelisted, and if yes: for what binaries ?
+n/a
+
+###### Is kernel upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 present in your kernel, if you boot chain includes a linux kernel ?
+yes
+
+###### if SHIM is loading grub2 bootloader, is CVE CVE-2020-10713 fixed ?
+yes
+
+##### Were your old SHIM hashes provided to Microsoft ?
+yes
+
+##### Did you change your certificate strategy, so that affected by CVE CVE-2020-10713 grub2 bootloaders can not be verified ?
+yes (rotated signing key, old shims are blacklisted)
 
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
 upstream grub-2.04 with patches for all currently discussed security issues
