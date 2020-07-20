@@ -59,7 +59,9 @@ It is shim-15, up to https://github.com/rhboot/shim/commit/b3e4d1f7555aabbf5d54d
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-FIXME
+No public URL ATM due to embargoe. Full sources included here and are in the
+source RPM int he docker image where it can be checked what was used to build
+it
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
@@ -86,7 +88,7 @@ by CVE-2020-10713 grub2:
 * Does your new chain of trust disallow booting old, affected by CVE-2020-10713,
   grub2 builds ?
 -------------------------------------------------------------------------------
-- Yes FIXME
+- Yes
 - Yes, we've rotated our signkey, so no old components can be started with this shim
 
 -------------------------------------------------------------------------------
