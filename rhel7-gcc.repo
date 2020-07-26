@@ -1,0 +1,9 @@
+[rhel7-gcc]
+name=rhel7-gcc
+baseurl=https://pjones.fedorapeople.org/rhel-7-shim-20210521/repo/
+enabled=1
+metadata_expire=5m 
+skip_if_unavailable=0
+gpgcheck=0
+cost=10
+exclude=glibc-langpack-all
