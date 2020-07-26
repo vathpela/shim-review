@@ -1,65 +1,88 @@
 Make sure you have provided the following information:
 
- - [ ] link to your code branch cloned from keybase shim-review repo
- - [ ] completed README.md file with the necessary information
- - [ ] shim.efi to be signed
- - [ ] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
- - [ ] binaries, for which hashes are added do vendor_db ( if you use vendor_db and have hashes whitelisted )
- - [ ] any extra patches to shim via your own git tree or as files
- - [ ] any extra patches to grub via your own git tree or as files
- - [ ] build logs
+ - [v] link to your code branch cloned from keybase shim-review repo
+ - [v] completed README.md file with the necessary information
+ - [v] shim.efi to be signed
+ - [v] public portion of your certificate(s) embedded in shim (the file passed to VENDOR_CERT_FILE)
+ - [v] binaries, for which hashes are added do vendor_db ( if you use vendor_db and have hashes whitelisted )
+ - [v] any extra patches to shim via your own git tree or as files
+ - [v] any extra patches to grub via your own git tree or as files
+ - [v] build logs
 
 
 ###### What organization or people are asking to have this signed:
-`[your text here]`
+Red Hat, Inc.
 
 ###### What product or service is this for:
-`[your text here]`
+Red Hat Enterprise Linux 7.9
 
 ###### What is the origin and full version number of your shim?
-`[your text here]`
+https://github.com/rhboot/shim/releases/tag/15
+plus a lot of patches cherry picked from master.
 
 ###### What's the justification that this really does need to be signed for the whole world to be able to boot it:
-`[your text here]`
+We're a major bigtime OS vendor
 
 ###### How do you manage and protect the keys used in your SHIM?
-`[your text here]`
+The keys are in an HSM managed by our PSIRT team, builders talk to it over
+https using gssapi for authentication, and each key is authorized for use by
+specific tickets, the issuing of which is protected by ACLs for the user, the
+package being built, and the build target.
 
 ###### Do you use EV certificates as embedded certificates in the SHIM?
-`[your text here]`
+No.
 
 ###### If you use new vendor_db functionality, are any hashes whitelisted, and if yes: for what binaries ?
-`[your text here]`
+Yes, for several linux kernel builds.  Yes.  The vendor db is included here as
+db.x64.esl, and it includes the certificate redhatsecurebootca5.cer and the
+authenticode hashes listed in db.x64.txt
 
 ###### Is kernel upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 present in your kernel, if you boot chain includes a linux kernel ?
-`[your text here]`
+None of the following commits are present:
+475fb4e8b2f4444d1d7b406ff3a7d21bc89a1e6f
+1957a85b0032a81e6482ca4aab883643b8dae06e
+612bd01fc6e04c3ce9eb59587b4a7e4ebd6aff35
+75b0cea7bf307f362057cc778efe89af4c615354
+These kernels do not have that bug.
 
 ###### if SHIM is loading grub2 bootloader, is CVE CVE-2020-10713 fixed ?
-`[your text here]`
+Yes
 
 ##### Were your old SHIM hashes provided to Microsoft ?
-`[your text here]`
+Yes
 
 ##### Did you change your certificate strategy, so that affected by CVE CVE-2020-10713 grub2 bootloaders can not be verified ?
-`[your text here]`
+Affected grub2 signing cert removed from shim, new certificate introduced.
+New grub2 builds with CVE fix will be signed with new signing certificate.
 
 ###### What is the origin and full version number of your bootloader (GRUB or other)?
-`[your text here]`
+grub2-2.02-0.84.el7_9
 
 ###### If your SHIM launches any other components, please provide further details on what is launched
-`[your text here]`
+It also launches fwupdate-12-6.el7_9.
 
 ###### How do the launched components prevent execution of unauthenticated code?
-`[your text here]`
+grub2 verifies signatures on booted kernels via shim.  fwupdate does not
+include code to launch other binaries, it can only load UEFI Capsule updates.
 
 ###### Does your SHIM load any loaders that support loading unsigned kernels (e.g. GRUB)?
-`[your text here]`
+No
 
 ###### What kernel are you using? Which patches does it includes to enforce Secure Boot?
-`[your text here]`
+See db.x64.txt
 
 ###### What changes were made since your SHIM was last signed?
-`[your text here]`
+Most of the master branch (basically all but the fraught openssl rebase and the
+filesystem rearrangement) is backported here, plus a few patches that have been
+proposed as PRs or are currently PR drafts, as well as two workarounds that
+will be pushed as a PR on Wednesday.  The last two aren't pushed publicly
+yet because they make it too clear what's going on right now IMO.  Each patch
+in the src rpm except for the last two has one of the following in its
+changelog:
+
+Upstream-commit-id: $COMMITID
+Upstream: pr#$PULL_REQUEST_NUMBER
 
 ###### What is the hash of your final SHIM binary?
-`[your text here]`
+def0ce090f4c6b203c317558d43d015427311475231e8ce9b2e00ac0c18d3922  shimia32.efi
+bd8020cc80d5f842ddfd5ac110c189707a83e85415eea3386884abdcfd7f3135  shimx64.efi
