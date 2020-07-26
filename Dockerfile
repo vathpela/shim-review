@@ -1,0 +1,30 @@
+FROM centos:centos8
+
+# RUN rm /etc/yum.repos.d/CentOS-Media.repo
+COPY rpmmacros /root/.rpmmacros
+RUN yum -y --enablerepo=Devel --enablerepo=PowerTools install \
+	wget rpm-build gcc make elfutils-libelf-devel git \
+	gnu-efi gnu-efi-devel openssl openssl-devel pesign
+RUN wget https://people.redhat.com/~pjones/shim-centos-8/shim-unsigned-x64-15-7.el8.src.rpm
+RUN rpm -ivh shim-unsigned-x64-15-7.el8.src.rpm
+RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
+RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-x64.spec
+COPY shimia32.efi /
+COPY shimx64.efi /
+RUN rpm2cpio /builddir/build/RPMS/x86_64/shim-unsigned-ia32-15-7.el8.x86_64.rpm  | cpio -diu
+RUN rpm2cpio /builddir/build/RPMS/x86_64/shim-unsigned-x64-15-7.el8.x86_64.rpm | cpio -diu
+RUN ls -l /*.efi ./usr/share/shim/15-7.el8/*/shim*.efi
+RUN echo 2
+RUN hexdump -Cv ./usr/share/shim/15-7.el8/x64/shimx64.efi > built-x64.hex
+RUN hexdump -Cv ./usr/share/shim/15-7.el8/ia32/shimia32.efi > built-ia32.hex
+RUN hexdump -Cv /shimia32.efi > orig-ia32.hex
+RUN hexdump -Cv /shimx64.efi > orig-x64.hex
+RUN objdump -h /usr/share/shim/15-7.el8/x64/shimx64.efi
+RUN objdump -h /usr/share/shim/15-7.el8/ia32/shimia32.efi
+RUN diff -u orig-ia32.hex built-ia32.hex
+RUN diff -u orig-x64.hex built-x64.hex
+RUN pesign -h -P -i /usr/share/shim/15-7.el8/ia32/shimia32.efi
+RUN pesign -h -P -i /shimia32.efi
+RUN pesign -h -P -i /usr/share/shim/15-7.el8/x64/shimx64.efi
+RUN pesign -h -P -i /shimx64.efi
+RUN sha256sum /usr/share/shim/15-7.el8/x64/shimx64.efi /shimx64.efi /usr/share/shim/15-7.el8/ia32/shimia32.efi /shimia32.efi
