@@ -135,3 +135,13 @@ root.log and boot.log are in this repository.
 Add any additional information you think we may need to validate this shim
 -------------------------------------------------------------------------------
 [your text here]
+Note that the following review branches are all building the exact same shim
+sources; only packaging, vendor_cert/vendor_db, and the build environments
+vary:
+centos-7.9-shim-20200726
+centos-8.3-shim-20200726
+fedora-31-shim-20200726
+fedora-32-shim-20200726
+fedora-33-shim-20200726
+rhel-7.9-shim-20200726
+rhel-8.3-shim-20200726
