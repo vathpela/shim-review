@@ -84,5 +84,5 @@ Upstream-commit-id: $COMMITID
 Upstream: pr#$PULL_REQUEST_NUMBER
 
 ###### What is the hash of your final SHIM binary?
-def0ce090f4c6b203c317558d43d015427311475231e8ce9b2e00ac0c18d3922  shimia32.efi
-bd8020cc80d5f842ddfd5ac110c189707a83e85415eea3386884abdcfd7f3135  shimx64.efi
+2cad0b454397089723959faafc2db5388c50dfd5c02319703baba6f03654561c  shimia32.efi
+24357d13d3cfc29a7e83d86a6bb53fc932461b7d0a653701188d7b427c704fb1  shimx64.efi
