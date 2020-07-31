@@ -58,7 +58,7 @@ https://github.com/rhboot/shim/releases/tag/15
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-https://people.redhat.com/~pjones/shim-centos-8/shim-unsigned-x64-15-7.el8.src.rpm
+https://people.redhat.com/~pjones/shim-centos-8/shim-unsigned-x64-15-8.el8.src.rpm
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
