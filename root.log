@@ -1,67 +1,67 @@
 INFO backend.py:909:  Mock Version: 1.1.16
-DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/
-DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/result
+DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/
+DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.9-build-6405656-4286548/result
 INFO backend.py:277:  calling preinit hooks
 DEBUG backend.py:450:  create skeleton dirs
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/rpm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/yum
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/dbus
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/dbus
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lock/rpm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lock/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/cache/yum
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/cache/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/rpm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp/ccache
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp/ccache
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/tmp
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum.repos.d
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum.repos.d
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/dbus
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/dbus
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lock/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lock/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/cache/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/cache/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/rpm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp/ccache
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp/ccache
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/tmp
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum.repos.d
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum.repos.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG backend.py:472:  touch required files
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/fstab
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log/yum.log
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/fstab
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log/yum.log
 DEBUG backend.py:292:  configure yum
 DEBUG backend.py:307:  configure yum rhnplugin
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum/pluginconf.d
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum/pluginconf.d
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum/pluginconf.d
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum/pluginconf.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG backend.py:398:  kver == 2.6.32-754.15.3.el6.x86_64
-DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.8Sj9Yi /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
-DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.8Sj9Yi /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.lRqlzb /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.lRqlzb /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:841:  ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/', 'groupinstall', 'build']
-DEBUG util.py:300:  Executing command: ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/', 'groupinstall', 'build', '--setopt=tsflags=nocontexts']
+DEBUG backend.py:841:  ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root/', 'groupinstall', 'build']
+DEBUG util.py:300:  Executing command: ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root/', 'groupinstall', 'build', '--setopt=tsflags=nocontexts']
 DEBUG util.py:257:  ================================================================================
 DEBUG util.py:257:   Package                       Arch     Version                   Repository
 DEBUG util.py:257:                                                                             Size
@@ -74,8 +74,8 @@ DEBUG util.py:257:   cpio                          x86_64   2.11-27.el7         
 DEBUG util.py:257:   diffutils                     x86_64   3.3-5.el7                 build   321 k
 DEBUG util.py:257:   findutils                     x86_64   1:4.5.11-6.el7            build   558 k
 DEBUG util.py:257:   gawk                          x86_64   4.0.2-4.el7_3.1           build   873 k
-DEBUG util.py:257:   gcc                           x86_64   4.8.5-39.el7              build    16 M
-DEBUG util.py:257:   gcc-c++                       x86_64   4.8.5-39.el7              build   7.2 M
+DEBUG util.py:257:   gcc                           x86_64   4.8.5-44.el7              build    16 M
+DEBUG util.py:257:   gcc-c++                       x86_64   4.8.5-44.el7              build   7.2 M
 DEBUG util.py:257:   grep                          x86_64   2.20-3.el7                build   343 k
 DEBUG util.py:257:   gzip                          x86_64   1.5-10.el7                build   128 k
 DEBUG util.py:257:   info                          x86_64   5.1-5.el7                 build   232 k
@@ -95,15 +95,15 @@ DEBUG util.py:257:  Installing for dependencies:
 DEBUG util.py:257:   acl                           x86_64   2.2.51-15.el7             build    80 k
 DEBUG util.py:257:   audit-libs                    x86_64   2.8.5-4.el7               build   101 k
 DEBUG util.py:257:   basesystem                    noarch   10.0-7.el7                build   3.8 k
-DEBUG util.py:257:   binutils                      x86_64   2.27-43.base.el7_8.1      build   5.9 M
+DEBUG util.py:257:   binutils                      x86_64   2.27-44.base.el7          build   5.9 M
 DEBUG util.py:257:   bzip2-libs                    x86_64   1.0.6-13.el7              build    39 k
 DEBUG util.py:257:   ca-certificates               noarch   2020.2.41-70.0.el7_8      build   381 k
 DEBUG util.py:257:   chkconfig                     x86_64   1.7.4-1.el7               build   180 k
-DEBUG util.py:257:   cpp                           x86_64   4.8.5-39.el7              build   6.0 M
+DEBUG util.py:257:   cpp                           x86_64   4.8.5-44.el7              build   6.0 M
 DEBUG util.py:257:   cracklib                      x86_64   2.9.0-11.el7              build    79 k
 DEBUG util.py:257:   cracklib-dicts                x86_64   2.9.0-11.el7              build   3.6 M
 DEBUG util.py:257:   cryptsetup-libs               x86_64   2.0.3-6.el7               build   338 k
-DEBUG util.py:257:   curl                          x86_64   7.29.0-57.el7             build   269 k
+DEBUG util.py:257:   curl                          x86_64   7.29.0-57.el7_8.1         build   269 k
 DEBUG util.py:257:   cyrus-sasl-lib                x86_64   2.1.26-23.el7             build   154 k
 DEBUG util.py:257:   dbus                          x86_64   1:1.10.24-14.el7_8        build   244 k
 DEBUG util.py:257:   dbus-libs                     x86_64   1:1.10.24-14.el7_8        build   168 k
@@ -111,10 +111,10 @@ DEBUG util.py:257:   device-mapper                 x86_64   7:1.02.164-7.el7_8.2
 DEBUG util.py:257:   device-mapper-libs            x86_64   7:1.02.164-7.el7_8.2      build   323 k
 DEBUG util.py:257:   dracut                        x86_64   033-568.el7               build   328 k
 DEBUG util.py:257:   dwz                           x86_64   0.11-3.el7                build    98 k
-DEBUG util.py:257:   elfutils                      x86_64   0.176-4.el7               build   307 k
-DEBUG util.py:257:   elfutils-default-yama-scope   noarch   0.176-4.el7               build    32 k
-DEBUG util.py:257:   elfutils-libelf               x86_64   0.176-4.el7               build   194 k
-DEBUG util.py:257:   elfutils-libs                 x86_64   0.176-4.el7               build   290 k
+DEBUG util.py:257:   elfutils                      x86_64   0.176-5.el7               build   307 k
+DEBUG util.py:257:   elfutils-default-yama-scope   noarch   0.176-5.el7               build    32 k
+DEBUG util.py:257:   elfutils-libelf               x86_64   0.176-5.el7               build   194 k
+DEBUG util.py:257:   elfutils-libs                 x86_64   0.176-5.el7               build   290 k
 DEBUG util.py:257:   expat                         x86_64   2.1.0-11.el7              build    80 k
 DEBUG util.py:257:   file                          x86_64   5.11-36.el7               build    56 k
 DEBUG util.py:257:   file-libs                     x86_64   5.11-36.el7               build   339 k
@@ -122,16 +122,16 @@ DEBUG util.py:257:   filesystem                    x86_64   3.2-25.el7          
 DEBUG util.py:257:   gdb                           x86_64   7.6.1-119.el7             build   2.4 M
 DEBUG util.py:257:   gdbm                          x86_64   1.10-8.el7                build    69 k
 DEBUG util.py:257:   glib2                         x86_64   2.56.1-5.el7              build   2.5 M
-DEBUG util.py:257:   glibc                         x86_64   2.17-307.el7.1            build   3.6 M
-DEBUG util.py:257:   glibc-common                  x86_64   2.17-307.el7.1            build    11 M
-DEBUG util.py:257:   glibc-devel                   x86_64   2.17-307.el7.1            build   1.1 M
-DEBUG util.py:257:   glibc-headers                 x86_64   2.17-307.el7.1            build   688 k
+DEBUG util.py:257:   glibc                         x86_64   2.17-317.el7              build   3.6 M
+DEBUG util.py:257:   glibc-common                  x86_64   2.17-317.el7              build    11 M
+DEBUG util.py:257:   glibc-devel                   x86_64   2.17-317.el7              build   1.1 M
+DEBUG util.py:257:   glibc-headers                 x86_64   2.17-317.el7              build   689 k
 DEBUG util.py:257:   gmp                           x86_64   1:6.0.0-15.el7            build   280 k
 DEBUG util.py:257:   gnupg2                        x86_64   2.0.22-5.el7_5            build   1.5 M
 DEBUG util.py:257:   groff-base                    x86_64   1.22.2-8.el7              build   941 k
 DEBUG util.py:257:   hardlink                      x86_64   1:1.0-19.el7              build    13 k
 DEBUG util.py:257:   json-c                        x86_64   0.11-4.el7_0              build    30 k
-DEBUG util.py:257:   kernel-headers                x86_64   3.10.0-1127.18.2.el7      build   9.0 M
+DEBUG util.py:257:   kernel-headers                x86_64   3.10.0-1127.19.1.el7      build   9.0 M
 DEBUG util.py:257:   keyutils-libs                 x86_64   1.5.8-3.el7               build    24 k
 DEBUG util.py:257:   kmod                          x86_64   20-28.el7                 build   122 k
 DEBUG util.py:257:   kmod-libs                     x86_64   20-28.el7                 build    50 k
@@ -144,13 +144,13 @@ DEBUG util.py:257:   libblkid                      x86_64   2.23.2-63.el7       
 DEBUG util.py:257:   libcap                        x86_64   2.22-11.el7               build    46 k
 DEBUG util.py:257:   libcap-ng                     x86_64   0.7.5-4.el7               build    24 k
 DEBUG util.py:257:   libcom_err                    x86_64   1.42.9-17.el7             build    41 k
-DEBUG util.py:257:   libcurl                       x86_64   7.29.0-57.el7             build   222 k
+DEBUG util.py:257:   libcurl                       x86_64   7.29.0-57.el7_8.1         build   222 k
 DEBUG util.py:257:   libdb                         x86_64   5.3.21-25.el7             build   718 k
 DEBUG util.py:257:   libdb-utils                   x86_64   5.3.21-25.el7             build   132 k
 DEBUG util.py:257:   libffi                        x86_64   3.0.13-19.el7             build    29 k
-DEBUG util.py:257:   libgcc                        x86_64   4.8.5-39.el7              build   101 k
+DEBUG util.py:257:   libgcc                        x86_64   4.8.5-44.el7              build   102 k
 DEBUG util.py:257:   libgcrypt                     x86_64   1.5.3-14.el7              build   262 k
-DEBUG util.py:257:   libgomp                       x86_64   4.8.5-39.el7              build   157 k
+DEBUG util.py:257:   libgomp                       x86_64   4.8.5-44.el7              build   158 k
 DEBUG util.py:257:   libgpg-error                  x86_64   1.12-3.el7                build    86 k
 DEBUG util.py:257:   libidn                        x86_64   1.28-4.el7                build   208 k
 DEBUG util.py:257:   libmount                      x86_64   2.23.2-63.el7             build   183 k
@@ -161,8 +161,8 @@ DEBUG util.py:257:   libsemanage                   x86_64   2.5-14.el7          
 DEBUG util.py:257:   libsepol                      x86_64   2.5-10.el7                build   296 k
 DEBUG util.py:257:   libsmartcols                  x86_64   2.23.2-63.el7             build   141 k
 DEBUG util.py:257:   libssh2                       x86_64   1.8.0-3.el7               build    87 k
-DEBUG util.py:257:   libstdc++                     x86_64   4.8.5-39.el7              build   304 k
-DEBUG util.py:257:   libstdc++-devel               x86_64   4.8.5-39.el7              build   1.5 M
+DEBUG util.py:257:   libstdc++                     x86_64   4.8.5-44.el7              build   305 k
+DEBUG util.py:257:   libstdc++-devel               x86_64   4.8.5-44.el7              build   1.5 M
 DEBUG util.py:257:   libtasn1                      x86_64   4.10-1.el7                build   319 k
 DEBUG util.py:257:   libuser                       x86_64   0.60-9.el7                build   399 k
 DEBUG util.py:257:   libutempter                   x86_64   1.1.6-4.el7               build    24 k
@@ -233,8 +233,8 @@ DEBUG util.py:257:   rpm-libs                      x86_64   4.11.3-43.el7       
 DEBUG util.py:257:   setup                         noarch   2.8.71-11.el7             build   165 k
 DEBUG util.py:257:   shared-mime-info              x86_64   1.8-5.el7                 build   311 k
 DEBUG util.py:257:   sqlite                        x86_64   3.7.17-8.el7_7.1          build   393 k
-DEBUG util.py:257:   systemd                       x86_64   219-73.el7_8.8            build   5.1 M
-DEBUG util.py:257:   systemd-libs                  x86_64   219-73.el7_8.8            build   415 k
+DEBUG util.py:257:   systemd                       x86_64   219-73.el7_8.9            build   5.1 M
+DEBUG util.py:257:   systemd-libs                  x86_64   219-73.el7_8.9            build   415 k
 DEBUG util.py:257:   tzdata                        noarch   2020a-1.el7               build   494 k
 DEBUG util.py:257:   ustr                          x86_64   1.0.4-16.el7              build    91 k
 DEBUG util.py:257:   xz-libs                       x86_64   5.2.2-1.el7               build   102 k
@@ -255,8 +255,8 @@ DEBUG util.py:257:    cpio.x86_64 0:2.11-27.el7
 DEBUG util.py:257:    diffutils.x86_64 0:3.3-5.el7                                                  
 DEBUG util.py:257:    findutils.x86_64 1:4.5.11-6.el7                                               
 DEBUG util.py:257:    gawk.x86_64 0:4.0.2-4.el7_3.1                                                 
-DEBUG util.py:257:    gcc.x86_64 0:4.8.5-39.el7                                                     
-DEBUG util.py:257:    gcc-c++.x86_64 0:4.8.5-39.el7                                                 
+DEBUG util.py:257:    gcc.x86_64 0:4.8.5-44.el7                                                     
+DEBUG util.py:257:    gcc-c++.x86_64 0:4.8.5-44.el7                                                 
 DEBUG util.py:257:    grep.x86_64 0:2.20-3.el7                                                      
 DEBUG util.py:257:    gzip.x86_64 0:1.5-10.el7                                                      
 DEBUG util.py:257:    info.x86_64 0:5.1-5.el7                                                       
@@ -276,15 +276,15 @@ DEBUG util.py:257:  Dependency Installed:
 DEBUG util.py:257:    acl.x86_64 0:2.2.51-15.el7                                                    
 DEBUG util.py:257:    audit-libs.x86_64 0:2.8.5-4.el7                                               
 DEBUG util.py:257:    basesystem.noarch 0:10.0-7.el7                                                
-DEBUG util.py:257:    binutils.x86_64 0:2.27-43.base.el7_8.1                                        
+DEBUG util.py:257:    binutils.x86_64 0:2.27-44.base.el7                                            
 DEBUG util.py:257:    bzip2-libs.x86_64 0:1.0.6-13.el7                                              
 DEBUG util.py:257:    ca-certificates.noarch 0:2020.2.41-70.0.el7_8                                 
 DEBUG util.py:257:    chkconfig.x86_64 0:1.7.4-1.el7                                                
-DEBUG util.py:257:    cpp.x86_64 0:4.8.5-39.el7                                                     
+DEBUG util.py:257:    cpp.x86_64 0:4.8.5-44.el7                                                     
 DEBUG util.py:257:    cracklib.x86_64 0:2.9.0-11.el7                                                
 DEBUG util.py:257:    cracklib-dicts.x86_64 0:2.9.0-11.el7                                          
 DEBUG util.py:257:    cryptsetup-libs.x86_64 0:2.0.3-6.el7                                          
-DEBUG util.py:257:    curl.x86_64 0:7.29.0-57.el7                                                   
+DEBUG util.py:257:    curl.x86_64 0:7.29.0-57.el7_8.1                                               
 DEBUG util.py:257:    cyrus-sasl-lib.x86_64 0:2.1.26-23.el7                                         
 DEBUG util.py:257:    dbus.x86_64 1:1.10.24-14.el7_8                                                
 DEBUG util.py:257:    dbus-libs.x86_64 1:1.10.24-14.el7_8                                           
@@ -292,10 +292,10 @@ DEBUG util.py:257:    device-mapper.x86_64 7:1.02.164-7.el7_8.2
 DEBUG util.py:257:    device-mapper-libs.x86_64 7:1.02.164-7.el7_8.2                                
 DEBUG util.py:257:    dracut.x86_64 0:033-568.el7                                                   
 DEBUG util.py:257:    dwz.x86_64 0:0.11-3.el7                                                       
-DEBUG util.py:257:    elfutils.x86_64 0:0.176-4.el7                                                 
-DEBUG util.py:257:    elfutils-default-yama-scope.noarch 0:0.176-4.el7                              
-DEBUG util.py:257:    elfutils-libelf.x86_64 0:0.176-4.el7                                          
-DEBUG util.py:257:    elfutils-libs.x86_64 0:0.176-4.el7                                            
+DEBUG util.py:257:    elfutils.x86_64 0:0.176-5.el7                                                 
+DEBUG util.py:257:    elfutils-default-yama-scope.noarch 0:0.176-5.el7                              
+DEBUG util.py:257:    elfutils-libelf.x86_64 0:0.176-5.el7                                          
+DEBUG util.py:257:    elfutils-libs.x86_64 0:0.176-5.el7                                            
 DEBUG util.py:257:    expat.x86_64 0:2.1.0-11.el7                                                   
 DEBUG util.py:257:    file.x86_64 0:5.11-36.el7                                                     
 DEBUG util.py:257:    file-libs.x86_64 0:5.11-36.el7                                                
@@ -303,16 +303,16 @@ DEBUG util.py:257:    filesystem.x86_64 0:3.2-25.el7
 DEBUG util.py:257:    gdb.x86_64 0:7.6.1-119.el7                                                    
 DEBUG util.py:257:    gdbm.x86_64 0:1.10-8.el7                                                      
 DEBUG util.py:257:    glib2.x86_64 0:2.56.1-5.el7                                                   
-DEBUG util.py:257:    glibc.x86_64 0:2.17-307.el7.1                                                 
-DEBUG util.py:257:    glibc-common.x86_64 0:2.17-307.el7.1                                          
-DEBUG util.py:257:    glibc-devel.x86_64 0:2.17-307.el7.1                                           
-DEBUG util.py:257:    glibc-headers.x86_64 0:2.17-307.el7.1                                         
+DEBUG util.py:257:    glibc.x86_64 0:2.17-317.el7                                                   
+DEBUG util.py:257:    glibc-common.x86_64 0:2.17-317.el7                                            
+DEBUG util.py:257:    glibc-devel.x86_64 0:2.17-317.el7                                             
+DEBUG util.py:257:    glibc-headers.x86_64 0:2.17-317.el7                                           
 DEBUG util.py:257:    gmp.x86_64 1:6.0.0-15.el7                                                     
 DEBUG util.py:257:    gnupg2.x86_64 0:2.0.22-5.el7_5                                                
 DEBUG util.py:257:    groff-base.x86_64 0:1.22.2-8.el7                                              
 DEBUG util.py:257:    hardlink.x86_64 1:1.0-19.el7                                                  
 DEBUG util.py:257:    json-c.x86_64 0:0.11-4.el7_0                                                  
-DEBUG util.py:257:    kernel-headers.x86_64 0:3.10.0-1127.18.2.el7                                  
+DEBUG util.py:257:    kernel-headers.x86_64 0:3.10.0-1127.19.1.el7                                  
 DEBUG util.py:257:    keyutils-libs.x86_64 0:1.5.8-3.el7                                            
 DEBUG util.py:257:    kmod.x86_64 0:20-28.el7                                                       
 DEBUG util.py:257:    kmod-libs.x86_64 0:20-28.el7                                                  
@@ -325,13 +325,13 @@ DEBUG util.py:257:    libblkid.x86_64 0:2.23.2-63.el7
 DEBUG util.py:257:    libcap.x86_64 0:2.22-11.el7                                                   
 DEBUG util.py:257:    libcap-ng.x86_64 0:0.7.5-4.el7                                                
 DEBUG util.py:257:    libcom_err.x86_64 0:1.42.9-17.el7                                             
-DEBUG util.py:257:    libcurl.x86_64 0:7.29.0-57.el7                                                
+DEBUG util.py:257:    libcurl.x86_64 0:7.29.0-57.el7_8.1                                            
 DEBUG util.py:257:    libdb.x86_64 0:5.3.21-25.el7                                                  
 DEBUG util.py:257:    libdb-utils.x86_64 0:5.3.21-25.el7                                            
 DEBUG util.py:257:    libffi.x86_64 0:3.0.13-19.el7                                                 
-DEBUG util.py:257:    libgcc.x86_64 0:4.8.5-39.el7                                                  
+DEBUG util.py:257:    libgcc.x86_64 0:4.8.5-44.el7                                                  
 DEBUG util.py:257:    libgcrypt.x86_64 0:1.5.3-14.el7                                               
-DEBUG util.py:257:    libgomp.x86_64 0:4.8.5-39.el7                                                 
+DEBUG util.py:257:    libgomp.x86_64 0:4.8.5-44.el7                                                 
 DEBUG util.py:257:    libgpg-error.x86_64 0:1.12-3.el7                                              
 DEBUG util.py:257:    libidn.x86_64 0:1.28-4.el7                                                    
 DEBUG util.py:257:    libmount.x86_64 0:2.23.2-63.el7                                               
@@ -342,8 +342,8 @@ DEBUG util.py:257:    libsemanage.x86_64 0:2.5-14.el7
 DEBUG util.py:257:    libsepol.x86_64 0:2.5-10.el7                                                  
 DEBUG util.py:257:    libsmartcols.x86_64 0:2.23.2-63.el7                                           
 DEBUG util.py:257:    libssh2.x86_64 0:1.8.0-3.el7                                                  
-DEBUG util.py:257:    libstdc++.x86_64 0:4.8.5-39.el7                                               
-DEBUG util.py:257:    libstdc++-devel.x86_64 0:4.8.5-39.el7                                         
+DEBUG util.py:257:    libstdc++.x86_64 0:4.8.5-44.el7                                               
+DEBUG util.py:257:    libstdc++-devel.x86_64 0:4.8.5-44.el7                                         
 DEBUG util.py:257:    libtasn1.x86_64 0:4.10-1.el7                                                  
 DEBUG util.py:257:    libuser.x86_64 0:0.60-9.el7                                                   
 DEBUG util.py:257:    libutempter.x86_64 0:1.1.6-4.el7                                              
@@ -414,17 +414,16 @@ DEBUG util.py:257:    rpm-libs.x86_64 0:4.11.3-43.el7
 DEBUG util.py:257:    setup.noarch 0:2.8.71-11.el7                                                  
 DEBUG util.py:257:    shared-mime-info.x86_64 0:1.8-5.el7                                           
 DEBUG util.py:257:    sqlite.x86_64 0:3.7.17-8.el7_7.1                                              
-DEBUG util.py:257:    systemd.x86_64 0:219-73.el7_8.8                                               
-DEBUG util.py:257:    systemd-libs.x86_64 0:219-73.el7_8.8                                          
+DEBUG util.py:257:    systemd.x86_64 0:219-73.el7_8.9                                               
+DEBUG util.py:257:    systemd-libs.x86_64 0:219-73.el7_8.9                                          
 DEBUG util.py:257:    tzdata.noarch 0:2020a-1.el7                                                   
 DEBUG util.py:257:    ustr.x86_64 0:1.0.4-16.el7                                                    
 DEBUG util.py:257:    xz-libs.x86_64 0:5.2.2-1.el7                                                  
 DEBUG util.py:257:    zip.x86_64 0:3.0-11.el7                                                       
 DEBUG util.py:257:    zlib.x86_64 0:1.2.7-18.el7                                                    
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir
 DEBUG util.py:300:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild']
-DEBUG util.py:257:  userdel: user 'mockbuild' does not exist
 DEBUG util.py:340:  Child returncode was: 6
 DEBUG util.py:300:  Executing command: ['/usr/sbin/groupdel', 'mockbuild']
 DEBUG util.py:257:  groupdel: group 'mockbuild' does not exist
@@ -433,132 +432,132 @@ DEBUG util.py:300:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:300:  Executing command: /usr/sbin/useradd -o -m -u 498 -g 135 -d /builddir -n mockbuild
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/RPMS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/RPMS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SRPMS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SRPMS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SOURCES
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SOURCES
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SPECS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SPECS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILD
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILD
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILDROOT
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILDROOT
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/originals
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/originals
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/RPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/RPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SRPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SRPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SOURCES
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SOURCES
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SPECS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SPECS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILD
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILD
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILDROOT
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILDROOT
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/originals
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/originals
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:111:  kill orphans
 INFO backend.py:909:  Mock Version: 1.1.16
 DEBUG backend.py:450:  create skeleton dirs
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/dbus
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lock/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/cache/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp/ccache
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum.repos.d
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/dbus
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lock/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/cache/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp/ccache
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum.repos.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG backend.py:398:  kver == 2.6.32-754.15.3.el6.x86_64
 DEBUG backend.py:472:  touch required files
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/fstab
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log/yum.log
-DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/fstab
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log/yum.log
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.yuMVMN /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
-DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.yuMVMN /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.FzvzRy /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.FzvzRy /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:300:  Executing command: uname -r
 DEBUG util.py:257:  2.6.32-754.15.3.el6.x86_64
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:111:  kill orphans
 INFO backend.py:909:  Mock Version: 1.1.16
-DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/
-DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/result
+DEBUG backend.py:273:  rootdir = /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/
+DEBUG backend.py:274:  resultdir = /mnt/build/mock/rhel-7.9-build-6405656-4286548/result
 INFO backend.py:277:  calling preinit hooks
 DEBUG backend.py:450:  create skeleton dirs
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lib/dbus
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/lock/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/cache/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/rpm
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/tmp/ccache
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/tmp
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum.repos.d
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lib/dbus
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/lock/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/cache/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/rpm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/tmp/ccache
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/tmp
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum.repos.d
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG backend.py:472:  touch required files
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/fstab
-DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/var/log/yum.log
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/fstab
+DEBUG util.py:68:  touching file: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/var/log/yum.log
 DEBUG backend.py:292:  configure yum
 DEBUG backend.py:307:  configure yum rhnplugin
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/etc/yum/pluginconf.d
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/etc/yum/pluginconf.d
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG backend.py:398:  kver == 2.6.32-754.15.3.el6.x86_64
-DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.QMMIdb /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
-DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.QMMIdb /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.TqPUPX /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.TqPUPX /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir
 DEBUG util.py:300:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild']
 DEBUG util.py:257:  userdel: mockbuild home directory (/builddir) not found
 DEBUG util.py:340:  Child returncode was: 0
@@ -568,58 +567,58 @@ DEBUG util.py:300:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:300:  Executing command: /usr/sbin/useradd -o -m -u 498 -g 135 -d /builddir -n mockbuild
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/RPMS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/RPMS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SRPMS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SRPMS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SOURCES
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SOURCES
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SPECS
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/SPECS
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILD
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILD
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILDROOT
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/BUILDROOT
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/originals
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/builddir/build/originals
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/RPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/RPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SRPMS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SRPMS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SOURCES
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SOURCES
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SPECS
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/SPECS
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILD
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILD
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILDROOT
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/BUILDROOT
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/originals
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/builddir/build/originals
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:83:  remove tree: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:57:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:60:  creating dir: /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG backend.py:398:  kver == 2.6.32-754.15.3.el6.x86_64
-DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
-DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG backend.py:791:  mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
+DEBUG util.py:300:  Executing command: mount -n -t proc   mock_chroot_proc   /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
-DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG backend.py:791:  mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
+DEBUG util.py:300:  Executing command: mount -n -t sysfs  mock_chroot_sysfs  /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.QMMIdb /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
-DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.QMMIdb /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG backend.py:791:  mount -n --bind /tmp/mock-selinux-plugin.TqPUPX /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
+DEBUG util.py:300:  Executing command: mount -n --bind /tmp/mock-selinux-plugin.TqPUPX /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
-DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG backend.py:791:  mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
+DEBUG util.py:300:  Executing command: mount -n -t devpts -o gid=5,mode=0620,ptmxmode=0666,newinstance mock_chroot_devpts /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
-DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG backend.py:791:  mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
+DEBUG util.py:300:  Executing command: mount -n -t tmpfs mock_chroot_shmfs /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: ['rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-15-8.el7.src.rpm']
+DEBUG util.py:300:  Executing command: ['rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-15-9.el7.src.rpm']
 DEBUG util.py:257:  Updating / installing...
-DEBUG util.py:257:  shim-15-8.el7                         ########################################
+DEBUG util.py:257:  shim-15-9.el7                         ########################################
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG backend.py:841:  ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root///builddir/build/SRPMS/shim-15-8.el7.src.rpm']
-DEBUG util.py:300:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/', '/mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root///builddir/build/SRPMS/shim-15-8.el7.src.rpm']
-DEBUG util.py:257:  Getting requirements for shim-15-8.el7.src
+DEBUG backend.py:841:  ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root/', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root///builddir/build/SRPMS/shim-15-9.el7.src.rpm']
+DEBUG util.py:300:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root/', '/mnt/build/mock/rhel-7.9-build-6405656-4286548/root///builddir/build/SRPMS/shim-15-9.el7.src.rpm']
+DEBUG util.py:257:  Getting requirements for shim-15-9.el7.src
 DEBUG util.py:257:   --> git-1.8.3.1-23.el7_8.x86_64
 DEBUG util.py:257:   --> 1:openssl-devel-1.0.2k-19.el7.x86_64
 DEBUG util.py:257:   --> 1:openssl-1.0.2k-19.el7.x86_64
@@ -707,14 +706,14 @@ DEBUG util.py:257:    vim-filesystem.x86_64 2:7.4.629-6.el7
 DEBUG util.py:257:    zlib-devel.x86_64 0:1.2.7-18.el7                                              
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG backend.py:622:  Copying packages to result dir
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/shm
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/shm
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/dev/pts
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/dev/pts
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc/filesystems
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc/filesystems
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/sys
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/sys
 DEBUG util.py:340:  Child returncode was: 0
-DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-pesign-build-6261830-4193806/root/proc
+DEBUG util.py:300:  Executing command: umount -n /mnt/build/mock/rhel-7.9-build-6405656-4286548/root/proc
 DEBUG util.py:340:  Child returncode was: 0
 DEBUG util.py:111:  kill orphans
