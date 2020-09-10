@@ -52,13 +52,14 @@ Who is the secondary contact for security updates, etc.
 -------------------------------------------------------------------------------
 What upstream shim tag is this starting from:
 -------------------------------------------------------------------------------
-We have used upstream shim version 15
-https://github.com/rhboot/shim/releases/tag/15
+We have used upstream shim branch 15.2 ( https://github.com/rhboot/shim/tree/15.2 ),
+which is https://github.com/rhboot/shim/releases/tag/15 plus a lot of patches
+cherry picked from master.
 
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-https://people.redhat.com/~pjones/shim-rhel-7/shim-15-8.el7.src.rpm
+https://people.redhat.com/~pjones/shim-rhel-7/shim-15-9.el7.src.rpm
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
@@ -135,13 +136,3 @@ root.log and boot.log are in this repository.
 Add any additional information you think we may need to validate this shim
 -------------------------------------------------------------------------------
 [your text here]
-Note that the following review branches are all building the exact same shim
-sources; only packaging, vendor_cert/vendor_db, and the build environments
-vary:
-centos-7.9-shim-20200726
-centos-8.3-shim-20200726
-fedora-31-shim-20200726
-fedora-32-shim-20200726
-fedora-33-shim-20200726
-rhel-7.9-shim-20200726
-rhel-8.3-shim-20200726

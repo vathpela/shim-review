@@ -17,8 +17,9 @@ Red Hat, Inc.
 Red Hat Enterprise Linux 7.9
 
 ###### What is the origin and full version number of your shim?
-https://github.com/rhboot/shim/releases/tag/15
-plus a lot of patches cherry picked from master.
+https://github.com/rhboot/shim/tree/15.2 , which is
+https://github.com/rhboot/shim/releases/tag/15 plus a lot of patches cherry
+picked from master.
 
 ###### What's the justification that this really does need to be signed for the whole world to be able to boot it:
 We're a major bigtime OS vendor
@@ -84,5 +85,5 @@ Upstream-commit-id: $COMMITID
 Upstream: pr#$PULL_REQUEST_NUMBER
 
 ###### What is the hash of your final SHIM binary?
-2cad0b454397089723959faafc2db5388c50dfd5c02319703baba6f03654561c  shimia32.efi
-24357d13d3cfc29a7e83d86a6bb53fc932461b7d0a653701188d7b427c704fb1  shimx64.efi
+fe924700ac79dc4689add5f7c6761e0d60e665a65f9572b43915010881b0bfbc  shimia32.efi
+c2405153f56a12f727853fd55bc9c99b81937b42a1a0bc585310da45d35a3fad  shimx64.efi
