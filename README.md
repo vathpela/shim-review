@@ -58,21 +58,20 @@ https://github.com/rhboot/shim/releases/tag/15
 -------------------------------------------------------------------------------
 URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-https://people.redhat.com/~pjones/shim-rhel-8/shim-unsigned-x64-15-8.el8.src.rpm
+https://people.redhat.com/~pjones/shim-rhel-8/shim-unsigned-x64-15-9.el8.src.rpm
 
 -------------------------------------------------------------------------------
 What patches are being applied and why:
 -------------------------------------------------------------------------------
-Most of the master branch (basically all but the fraught openssl rebase and the
-filesystem rearrangement) is backported here, plus a few patches that have been
-proposed as PRs or are currently PR drafts, as well as two workarounds that
-will be pushed as a PR on Wednesday.  The last two aren't pushed publicly
-yet because they make it too clear what's going on right now IMO.  Each patch
-in the src rpm except for the last two has one of the following in its
-changelog:
+This is the same as the previous RHEL 8 build plus:
+- a fix on the delete path of MokManager to fix some deletions that simply got
+  /skipped/ accidentally.
+- A fix for a minor buffer overrun; this in itself isn't a vulnerability
+  because of how edk2's allocator works, but one of our hardware partners
+  shipped a "gcc -fanalyze=address"-like allocation checker enabled by default
+  in a bunch of their hardware, and it catches it and haults booting.
 
-Upstream-commit-id: $COMMITID
-Upstream: pr#$PULL_REQUEST_NUMBER
+Everything here is en route to upstream.
 
 -------------------------------------------------------------------------------
 If bootloader, shim loading is, grub2: is CVE-2020-10713 fixed ?
