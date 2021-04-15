@@ -1,2 +1,8 @@
-.*.sw?
+*.cab
+*.log
+!/build.log
+!/root.log
+*.rpm
+*.sw?
 *~
+/*/
