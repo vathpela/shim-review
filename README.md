@@ -85,7 +85,8 @@ https://github.com/rhboot/shim
 *******************************************************************************
 ### What patches are being applied and why:
 *******************************************************************************
-None
+0001-dos2unix-fix-flags-for-RHEL-7.patch - change the command line arguments to
+dos2unix because RHEL 7 doesn't have -R.
 
 *******************************************************************************
 ### Do you have the NX bit set in your shim? If so, is your entire boot stack NX-compatible and what testing have you done to ensure such compatibility?
@@ -214,9 +215,9 @@ No structural changes other than updates to shim and grub
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-d5f18a6efcde04f0076eb992abf61365baf0bf8f5ccc0a2a067f44d26b0fd82b  shimx64.efi
+86f822e713b28bbf42ae0b54029c61c54243760b0304d508c322fb9cbd94c561  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-1f1ac3c854489c07e64a54723c436a79cdd2f2acb8a35b93d3773c2937f9f6b6 shimx64.efi
+bf0ddd9e880090051b3b1807156cb1fd0ca12d196c9342ca4a3e094d19733ba5 shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
@@ -240,6 +241,7 @@ and only append your own. More information on how SBAT works can be found
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
