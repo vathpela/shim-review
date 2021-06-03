@@ -40,7 +40,9 @@ No.
 
 ###### If you use new vendor_db functionality, are any hashes allow-listed, and if yes: for what binaries ?
 
-We don't use vendor_db in this build.
+Yes, for several linux kernel builds.  Yes.  The vendor db is included here as
+db.x64.esl, and it includes the certificate redhatsecurebootca5.cer and the
+authenticode hashes listed in db.x64.txt
 
 ###### Is kernel upstream commit 75b0cea7bf307f362057cc778efe89af4c615354 present in your kernel, if you boot chain includes a Linux kernel ?
 
@@ -146,3 +148,5 @@ d5c77c21a626aff4e20c5f34fecf3ed57ca0e31ea75b98819002518f8cf93126  shimx64.efi
 These represent the following submission IDs:
 - `14255918017826488` shimia32.efi
 - `13902829049082438` shimx64.efi
+
+- v2: fixed the repo link and the `vendor_db` section.
