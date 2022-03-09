@@ -1,0 +1,8 @@
+[buildroot]
+name=buildroot
+baseurl=file:///mnt/redhat/brewroot/repos/rhel-8.6.0-build/latest/x86_64
+enabled=1
+metadata_expire=5m
+skip_if_unavailable=0
+gpgcheck=0
+cost=10
