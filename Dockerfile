@@ -1,4 +1,4 @@
-FROM shim-rhel-8.6-20220309-buildroot
+FROM docker://vathpela/shim-rhel-8.6-20220309-buildroot:latest
 
 # RUN rm /etc/yum.repos.d/CentOS-Media.repo
 RUN echo 10
