@@ -10,6 +10,8 @@ Make sure you have provided the following information:
  - [ ] build logs
  - [ ] a Dockerfile to reproduce the build of the provided shim EFI binaries
 
+This is for the shim-review branch at https://github.com/vathpela/shim-review/tree/rhel-8.6-shim-20220309/
+
 -------------------------------------------------------------------------------
 ### What organization or people are asking to have this signed?
 -------------------------------------------------------------------------------
