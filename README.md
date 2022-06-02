@@ -183,7 +183,23 @@ No.
 ### Please provide exact SBAT entries for all SBAT binaries you are booting or planning to boot directly through shim.
 ### Where your code is only slightly modified from an upstream vendor's, please also preserve their SBAT entries to simplify revocation.
 -------------------------------------------------------------------------------
-In grub builds that have "grub,2" we also use "grub.rh,2".
+shim:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,2,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.redhat,1,Red Hat Inc,shim,15.5,secalert@redhat.com
+
+(15.5 in the above is an error in our sbat.redhat.csv file used during the
+build.  It's not load bearing, so we don't intend to re-spin to fix it.)
+
+grub:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,2,Free Software Foundation,grub,1:2.02-136.el8,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.02-136.el8,mailto:secalert@redhat.com
+
+fwupd:
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.1,https://github.com/fwupd/fwupd
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.4,mail:secalert@redhat.com
 
 -------------------------------------------------------------------------------
 ### Which modules are built into your signed grub image?
@@ -200,7 +216,7 @@ usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
 -------------------------------------------------------------------------------
 ### What is the origin and full version number of your bootloader (GRUB or other)?
 -------------------------------------------------------------------------------
-grub2-2.02-134.el8
+grub2-2.02-136.el8
 
 -------------------------------------------------------------------------------
 ### If your SHIM launches any other components, please provide further details on what is launched.
