@@ -1,40 +1,40 @@
 INFO buildroot.py:309:  Mock Version: 1.2.17
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm
 DEBUG buildroot.py:447:  kernel version == 3.10.0-1160.31.1.el7.x86_64
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/fstab
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/dnf.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/log/yum.log
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/fstab
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/dnf.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/log/yum.log
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.cIHcoP', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.MbDAqa', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
-DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root
-DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/result
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/pki/mock
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/pki/mock
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum/pluginconf.d
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum/pluginconf.d
+DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root
+DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/result
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/pki/mock
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/pki/mock
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum/pluginconf.d
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum/pluginconf.d
 DEBUG package_manager.py:199:  configure yum
 DEBUG package_manager.py:205:  configure yum priorities
 DEBUG package_manager.py:207:  configure yum rhnplugin
-DEBUG package_manager.py:96:  ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/', 'groupinstall', 'build']
+DEBUG package_manager.py:96:  ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/', 'groupinstall', 'build']
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/', 'groupinstall', 'build', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:495:  Executing command: ['/usr/bin/yum', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/', 'groupinstall', 'build', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:417:  There is no installed groups file.
 DEBUG util.py:417:  Maybe run: yum groups mark convert (see man yum)
 DEBUG util.py:417:  ================================================================================
@@ -396,7 +396,7 @@ DEBUG util.py:417:    xz-libs.x86_64 0:5.2.2-1.el7
 DEBUG util.py:417:    zip.x86_64 0:3.0-11.el7                                                       
 DEBUG util.py:417:    zlib.x86_64 0:1.2.7-18.el7                                                    
 DEBUG util.py:542:  Child return code was: 0
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/os-release
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/os-release
 DEBUG util.py:563:  child environment: None
 DEBUG util.py:495:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:417:  userdel: user 'mockbuild' does not exist
@@ -411,24 +411,24 @@ DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
 DEBUG util.py:495:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '995', '-g', '135', '-d', '/builddir', '-n', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:542:  Child return code was: 0
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/RPMS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/RPMS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SPECS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SPECS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SRPMS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SRPMS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SOURCES
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SOURCES
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILD
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILD
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILDROOT
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILDROOT
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/originals
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/originals
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/.initialized
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/RPMS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/RPMS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SPECS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SPECS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SRPMS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SRPMS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SOURCES
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SOURCES
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILD
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILD
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILDROOT
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILDROOT
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/originals
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/originals
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/.initialized
 INFO backend.py:168:  Installed packages:
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: /bin/rpm --root /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root -qa with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell True
+DEBUG util.py:495:  Executing command: /bin/rpm --root /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root -qa with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOSTNAME': 'mock', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell True
 DEBUG util.py:417:  redhat-release-server-7.9-3.el7.x86_64
 DEBUG util.py:417:  filesystem-3.2-25.el7.x86_64
 DEBUG util.py:417:  tzdata-2020b-3.el7.noarch
@@ -604,51 +604,51 @@ DEBUG util.py:417:  which-2.20-7.el7.x86_64
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:176:  kill orphans
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 INFO buildroot.py:309:  Mock Version: 1.2.17
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm
 DEBUG buildroot.py:447:  kernel version == 3.10.0-1160.31.1.el7.x86_64
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/fstab
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/dnf.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/log/yum.log
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/fstab
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/dnf.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/log/yum.log
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.EazMw6', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.YPVRL0', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
-DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root
-DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/result
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/pki/mock
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum/pluginconf.d
+DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root
+DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/result
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/pki/mock
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum/pluginconf.d
 DEBUG package_manager.py:199:  configure yum
 DEBUG package_manager.py:205:  configure yum priorities
 DEBUG package_manager.py:207:  configure yum rhnplugin
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/.initialized
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/.initialized
 INFO backend.py:283:  Running in chroot: ['uname -r']
 DEBUG util.py:563:  child environment: None
 DEBUG util.py:495:  Executing command: ['/bin/sh', '-c', 'uname -r'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
@@ -656,54 +656,54 @@ DEBUG util.py:417:  3.10.0-1160.31.1.el7.x86_64
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:176:  kill orphans
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 INFO buildroot.py:309:  Mock Version: 1.2.17
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm
 DEBUG buildroot.py:447:  kernel version == 3.10.0-1160.31.1.el7.x86_64
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/fstab
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/dnf.conf
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/log/yum.log
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/fstab
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/dnf.conf
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/log/yum.log
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'proc', 'proc', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'sysfs', 'sysfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.Hn8nvI', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/mount', '-n', '--bind', '/tmp/mock-selinux-plugin.L0vPoE', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
-DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root
-DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/result
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/pki/mock
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/etc/yum/pluginconf.d
+DEBUG buildroot.py:138:  rootdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root
+DEBUG buildroot.py:139:  resultdir = /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/result
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/pki/mock
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/etc/yum/pluginconf.d
 DEBUG package_manager.py:199:  configure yum
 DEBUG package_manager.py:205:  configure yum priorities
 DEBUG package_manager.py:207:  configure yum rhnplugin
 DEBUG buildroot.py:330:  removing 3 rpm db files
-DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/lib/rpm/__db.002
-DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/lib/rpm/__db.001
-DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:335:  _nuke_rpm_db: removing /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/var/lib/rpm/__db.002
 DEBUG util.py:563:  child environment: None
 DEBUG util.py:495:  Executing command: ['/usr/sbin/userdel', '-f', 'mockbuild'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:542:  Child return code was: 0
@@ -720,32 +720,40 @@ DEBUG util.py:417:  useradd: warning: the home directory already exists.
 DEBUG util.py:417:  Not copying any file from skel directory into it.
 DEBUG util.py:417:  Creating mailbox file: File exists
 DEBUG util.py:542:  Child return code was: 0
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/RPMS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/RPMS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SPECS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SPECS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SRPMS
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SRPMS
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/SOURCES
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILD
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILD
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILDROOT
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/BUILDROOT
-DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/originals
-DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/builddir/build/originals
-DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/.initialized
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/RPMS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/RPMS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SPECS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SPECS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SRPMS
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SRPMS
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/SOURCES
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILD
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILD
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILDROOT
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/BUILDROOT
+DEBUG util.py:97:  ensuring that dir exists: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/originals
+DEBUG util.py:100:  creating dir: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/builddir/build/originals
+DEBUG util.py:110:  touching file: /mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/.initialized
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-15.6-1.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-15.6-2.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:417:  Updating / installing...
-DEBUG util.py:417:  shim-15.6-1.el7                       ########################################
+DEBUG util.py:417:  shim-15.6-2.el7                       ########################################
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-15.6-1.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-15.6-2.el7.src.rpm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
 DEBUG util.py:417:  0001-Make-SBAT-variable-payload-introspectable.patch
 DEBUG util.py:417:  0002-Reference-MokListRT-instead-of-MokList.patch
 DEBUG util.py:417:  0003-Add-a-link-to-the-test-plan-in-the-readme.patch
 DEBUG util.py:417:  0004-Enable-TDX-measurement-to-RTMR-register.patch
 DEBUG util.py:417:  0005-Discard-load-options-that-start-with-a-NUL.patch
+DEBUG util.py:417:  0006-shim-Flush-the-memory-region-from-i-cache-before-exe.patch
+DEBUG util.py:417:  0007-load_cert_file-Fix-stack-issue.patch
+DEBUG util.py:417:  0008-load_cert_file-Use-EFI-RT-memory-function.patch
+DEBUG util.py:417:  0009-Add-malign-double-to-IA32-compiler-flags.patch
+DEBUG util.py:417:  0010-pe-Fix-image-section-entry-point-validation.patch
+DEBUG util.py:417:  0011-make-archive-Build-reproducible-tarball.patch
+DEBUG util.py:417:  0012-mok-remove-MokListTrusted-from-PCR-7.patch
+DEBUG util.py:417:  0013-CryptoPkg-BaseCryptLib-fix-NULL-dereference.patch
 DEBUG util.py:417:  db.aa64.esl
 DEBUG util.py:417:  db.x64.esl
 DEBUG util.py:417:  dbx.aa64.esl
@@ -756,10 +764,10 @@ DEBUG util.py:417:  shim.patches
 DEBUG util.py:417:  shim.spec
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG package_manager.py:96:  ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root//builddir/build/SRPMS/shim-15.6-1.el7.src.rpm']
+DEBUG package_manager.py:96:  ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root//builddir/build/SRPMS/shim-15.6-2.el7.src.rpm']
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root//builddir/build/SRPMS/shim-15.6-1.el7.src.rpm', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
-DEBUG util.py:417:  Getting requirements for shim-15.6-1.el7.src
+DEBUG util.py:495:  Executing command: ['/usr/bin/yum-builddep', '--installroot', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root//builddir/build/SRPMS/shim-15.6-2.el7.src.rpm', '--setopt=tsflags=nocontexts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/bash', 'LC_MESSAGES': 'C', 'PROMPT_COMMAND': 'printf "\x1b]0;<mock-chroot>\x07<mock-chroot>"', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'HOME': '/builddir', 'HOSTNAME': 'mock'} and shell False
+DEBUG util.py:417:  Getting requirements for shim-15.6-2.el7.src
 DEBUG util.py:417:   --> Already installed : binutils-2.27-44.base.el7.x86_64
 DEBUG util.py:417:   --> Already installed : gcc-4.8.5-44.el7.x86_64
 DEBUG util.py:417:   --> git-1.8.3.1-23.el7_8.x86_64
@@ -852,17 +860,17 @@ DEBUG util.py:563:  child environment: None
 DEBUG backend.py:450:  Copying packages to result dir
 DEBUG util.py:176:  kill orphans
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc/filesystems'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/pts'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/dev/shm'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/sys'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
 DEBUG util.py:563:  child environment: None
-DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9119170-6505837/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
+DEBUG util.py:495:  Executing command: ['/bin/umount', '-n', '-l', '/mnt/build/mock/rhel-7.9-pesign-build-9396071-6678141/root/proc'] with env {'LANG': 'en_US.UTF-8', 'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOSTNAME': 'mock', 'HOME': '/builddir', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin'} and shell False
 DEBUG util.py:542:  Child return code was: 0
