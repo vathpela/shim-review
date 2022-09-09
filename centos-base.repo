@@ -1,7 +1,0 @@
-[centos-base]
-name=CentOS-$releasever - Base
-baseurl=https://vault.centos.org/7.2.1511/os/$basearch
-failovermethod=priority
-gpgcheck=0
-skip_if_unavailable=False
-exclude=gcc* binutils* git* annobin* elfutils* *rpm* glibc* efi* redhat* make* diff* git* patch* libgcc* libffi* glibc* xz* libcom* libselinux* zlib*
