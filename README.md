@@ -143,7 +143,7 @@ Far too many to explain here.  RHEL actively backports features and bugfixes.
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 -------------------------------------------------------------------------------
-We don't use vendor_db in this build.
+See db.x64.txt for a list of kernels that are explicitly allowed.  These are all kernels signed with a prior certificate, but which are not vulnerable to the kernel vulnerabilities listed above.  redhatsecurebootca5.cer (in this repo) is also in vendor_db.  An annotated hex dump is also provided in db.x64.dump .
 
 -------------------------------------------------------------------------------
 ### If you are re-using a previously used (CA) certificate, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs to vendor_dbx in shim in order to prevent GRUB2 from being able to chainload those older GRUB2 binaries. If you are changing to a new (CA) certificate, this does not apply.
