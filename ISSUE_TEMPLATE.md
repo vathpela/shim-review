@@ -12,17 +12,17 @@ Confirm the following are included in your repo, checking each box:
 -------------------------------------------------------------------------------
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 -------------------------------------------------------------------------------
-`https://github.com/vathpela/shim-review/tree/rhel-7-shim-20221116`
+`https://github.com/vathpela/shim-review/tree/rhel-7-shim-20221207`
 
 -------------------------------------------------------------------------------
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
 $ sha256sum shimx64.efi
-e8da09733d657838f6694eaf65d049b85976fe15a192895718b93277c36bab21  shimx64.efi
+f5a16ee9836f2138c4b159d2a63a127a03ca7189566ca0ae9c352c40d5fdaaf6  shimx64.efi
 $ pesign -P -h -i shimx64.efi
-7f1c904821006fd0c6c936ced779afef10bdcd71e98e486c08924e9ef126654a shimx64.efi
+d8fc47a518f004b136e8ea151c7f5582b47213aff4ad5bf2452b76e083c118a5 shimx64.efi
 
 -------------------------------------------------------------------------------
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 -------------------------------------------------------------------------------
-https://github.com/rhboot/shim-review/issues/178
+https://github.com/rhboot/shim-review/issues/293

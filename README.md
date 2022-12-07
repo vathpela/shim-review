@@ -73,15 +73,17 @@ Please create your shim binaries starting with the 15.6 shim release tar file: h
 This matches https://github.com/rhboot/shim/releases/tag/15.6 and contains the appropriate gnu-efi source.
 
 -------------------------------------------------------------------------------
-This is 15.6 plus patches in git up through https://github.com/rhboot/shim/commit/53509eaf2253e23bfb552e9386fd0877abe592b4
+This is 15.6 plus patches in git up through
+https://github.com/rhboot/shim/commit/53509eaf2253e23bfb552e9386fd0877abe592b4,
+plus the patch for issue #533.
 
 -------------------------------------------------------------------------------
 ### URL for a repo that contains the exact code which was built to get this binary:
 -------------------------------------------------------------------------------
-https://github.com/rhboot/shim/commit/53509eaf2253e23bfb552e9386fd0877abe592b4
+https://github.com/vathpela/mallory/tree/rhel-7-shim-20221207
 
 Source rpm is:
-https://pjones.fedorapeople.org/rhel-7-shim-20221116/shim-15.6-2.el7.src.rpm
+https://pjones.fedorapeople.org/rhel-7-shim-20221207/shim-15.6-3.el7.src.rpm
 
 -------------------------------------------------------------------------------
 ### What patches are being applied and why:
@@ -168,15 +170,15 @@ root.log and build.log
 -------------------------------------------------------------------------------
 ### What changes were made since your SHIM was last signed?
 -------------------------------------------------------------------------------
-[your text here]
+We added the fix for upstream issue #533
 
 -------------------------------------------------------------------------------
 ### What is the SHA256 hash of your final SHIM binary?
 -------------------------------------------------------------------------------
 $ sha256sum shimx64.efi
-e8da09733d657838f6694eaf65d049b85976fe15a192895718b93277c36bab21  shimx64.efi
+f5a16ee9836f2138c4b159d2a63a127a03ca7189566ca0ae9c352c40d5fdaaf6  shimx64.efi
 $ pesign -P -h -i shimx64.efi
-7f1c904821006fd0c6c936ced779afef10bdcd71e98e486c08924e9ef126654a shimx64.efi
+d8fc47a518f004b136e8ea151c7f5582b47213aff4ad5bf2452b76e083c118a5 shimx64.efi
 
 -------------------------------------------------------------------------------
 ### How do you manage and protect the keys used in your SHIM?
