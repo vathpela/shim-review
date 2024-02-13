@@ -213,7 +213,8 @@ root.log and build.log
 ### What changes were made in the distor's secure boot chain since your SHIM was last signed?
 For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA, etc..
 *******************************************************************************
-No structural changes other than updates to shim and grub
+We now also have a UKI built with systemd-stub that has a kernel built-in and
+launched directly.
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
@@ -260,6 +261,14 @@ sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
 fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.12,mail:secalert@redhat.com
 
+kernel-uki-virt:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+systemd,1,The systemd Developers,systemd,252,https://systemd.io/
+systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-18.el9,https://bugzilla.redhat.com/
+linux,1,Red Hat,linux,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
+linux.rhel,1,Red Hat,linux,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
+kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
+
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
 *******************************************************************************
@@ -285,7 +294,7 @@ grub2-2.06-73.el9
 *******************************************************************************
 ### If your SHIM launches any other components, please provide further details on what is launched.
 *******************************************************************************
-It also launches fwupd, sbat details are above.
+It also launches fwupd and a systemd-stub UKI.  sbat details are above.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
