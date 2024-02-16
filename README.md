@@ -169,7 +169,9 @@ All of the following commits are present:
 75b0cea7bf307f362057cc778efe89af4c615354
 435d1a471598752446a72ad1201b3c980526d869
 
-And the configuration setting CONFIG_EFI_CUSTOM_SSDT_OVERLAYS is disabled.
+The configuration setting CONFIG_EFI_CUSTOM_SSDT_OVERLAYS is enabled, but since
+1957a85b0032a81e6482ca4aab883643b8dae06e is present, this is disabled when
+lockdown is on, as it is when Secure Boot is enabled.
 
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
