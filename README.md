@@ -28,7 +28,7 @@ Red Hat, Inc.
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-Red Hat Enterprise Linux 9
+Fedora Linux
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
@@ -38,7 +38,7 @@ We're a major bigtime OS vendor
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-RHEL 9 has a different set of trusted certificates than previous versions.
+Fedora requires all of its build artifacts to come out of our build system.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -97,7 +97,7 @@ It's not set.
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader what exact implementation of Secureboot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
 *******************************************************************************
-This is a "RHEL-like" implementation.
+This is a "Fedora-like" implementation.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader and your previously released shim booted a version of GRUB2 affected by any of the CVEs in the July 2020, the March 2021, the June 7th 2022, the November 15th 2022, or 3rd of October 2023 GRUB2 CVE list, have fixes for all these CVEs been applied?
@@ -141,13 +141,13 @@ This is a "RHEL-like" implementation.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,3 fixes and NTFS is not built in.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 The entry should look similar to: `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,3 fixes
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -176,7 +176,9 @@ lockdown is on, as it is when Secure Boot is enabled.
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-Far too many to explain here.  RHEL actively backports features and bugfixes.
+This kernel is updated frequently.  There are occasionally some patches while
+they're on the way to mainline, but for the most part fedora is based on
+linus's kernels.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -188,28 +190,27 @@ Yes.
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
-vendor_db contains redhatsecurebootca5.cer and redhatsecurebootca8.cer, which
-are included in this repository.
+This shim trusts the fedora-ca-20200709.cer certificate from this repository.
 
 *******************************************************************************
 ### If you are re-using a previously used (CA) certificate, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs to vendor_dbx in shim in order to prevent GRUB2 from being able to chainload those older GRUB2 binaries. If you are changing to a new (CA) certificate, this does not apply.
 ### Please describe your strategy.
 *******************************************************************************
-This build requires .sbat support, and that's already in all of the fixed grub2
-builds but none of the pre-CVE ones.
+fedora-ca-20200709.cer was created after the last time we needed to revoke
+certificates.
 
 *******************************************************************************
 ### What OS and toolchain must we use to reproduce this build?  Include where to find it, etc.  We're going to try to reproduce your build as closely as possible to verify that it's really a build of the source tree you tell us it is, so these need to be fairly thorough. At the very least include the specific versions of gcc, binutils, and gnu-efi which were used, and where to find those binaries.
 ### If the shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case and what the differences would be.
 *******************************************************************************
-This is built on RHEL 9.  The Dockerfile in this repository can be used to
+This is built on Fedora 38.  The Dockerfile in this repository can be used to
 launch an identical buildroot.
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-root.log and build.log
+root.log and build.log are in this repo.
 
 *******************************************************************************
 ### What changes were made in the distor's secure boot chain since your SHIM was last signed?
@@ -222,17 +223,16 @@ launched directly.
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-d7ac3a63b380128cf3ceb2545f56caf4688c16329332c2d5dac537f787031585  shimx64.efi
+d7ddb10719785f2660b87f84f8603987db145816f1a98b277145ed4a7828f086  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-27b12463e599b3147635f272e3722960e443def60fef088eba600697017529f2 shimx64.efi
+271403343af4a4dfb5fcc83faa83ba3ebde5c3bc76fc6ab1a14f7d5ce0ac1242 shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
 *******************************************************************************
-The keys are in an HSM managed by our PSIRT team, builders talk to it over
-https using gssapi for authentication, and each key is authorized for use by
-specific tickets, the issuing of which is protected by ACLs for the user, the
-package being built, and the build target.
+The keys used for signing our artifacts are deployed on HSMs, and the
+authorized build hosts are only used for production builds of the appropriate
+packages by authorized developers.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the SHIM?
@@ -251,25 +251,27 @@ and only append your own. More information on how SBAT works can be found
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+shim.rh,3,The Fedora Project,shim,15.6,https://src.fedoraproject.org/rpms/shim-unsigned-x64
+shim.redhat,3,The Fedora Project,shim,15.8,https://src.fedoraproject.org/rpms/shim-unsigned-x64
+shim.fedora,3,The Fedora Project,shim,15.8,https://src.fedoraproject.org/rpms/shim-unsigned-x64
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,3,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
-grub.rh,2,Red Hat,grub2,2.06-73.el9,mailto:secalert@redhat.com
+grub.rh,2,Red Hat,grub2,2.06-114.fc38,mailto:secalert@redhat.com
 
-fwupdate:
+fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
-fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.12,mail:secalert@redhat.com
+fwupd-efi.fedora,1,The Fedora Project,fwupd-efi,1.4-6.fc40,https://src.fedoraproject.org/rpms/fwupd-efi
 
 kernel-uki-virt:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-systemd,1,The systemd Developers,systemd,252,https://systemd.io/
-systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-18.el9,https://bugzilla.redhat.com/
-linux,1,Red Hat,linux,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
-linux.rhel,1,Red Hat,linux,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
-kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-362.18.1.el9_3.x86_64,https://bugzilla.redhat.com/
+systemd,1,The systemd Developers,systemd,253,https://systemd.io/
+systemd.fedora,1,Fedora Linux,systemd,253.15-2.fc38,https://bugzilla.redhat.com/
+
+Note that the RHEL builds of kernel-uki-virt have more .sbat info; I've pinged
+the maintainer about adding the appropriate ones in Fedora as well.
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -291,7 +293,7 @@ We don't currently get shim signed for those arches.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-grub2-2.06-73.el9
+grub2-2.06-114.fc38
 
 *******************************************************************************
 ### If your SHIM launches any other components, please provide further details on what is launched.
@@ -307,7 +309,7 @@ code to launch other binaries, it can only load UEFI Capsule updates.
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 *******************************************************************************
-Everything has secure boot validation and and .sbat self checks.
+Everything has secure boot validation.
 
 *******************************************************************************
 ### Does your SHIM load any loaders that support loading unsigned kernels (e.g. GRUB2)?
@@ -317,7 +319,8 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches does it includes to enforce Secure Boot?
 *******************************************************************************
-Currently it's kernel-5.14.0-418.el9.  It has all the patches we've previously discussed.
+Currently it's kernel-6.7.5-100.fc38, kernel-6.7.5-200.fc39, and
+kernel-6.8.0-0.rc5.41.fc40, but these things move frequently.
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim.
