@@ -18,9 +18,9 @@ https://github.com/vathpela/shim-review/tree/fedora-x64-20231201
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-d7ddb10719785f2660b87f84f8603987db145816f1a98b277145ed4a7828f086  shimx64.efi
+8dfa5fee2087612955889b3546d15d64d04ef54edd4465cb15ffadea816920ef  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-271403343af4a4dfb5fcc83faa83ba3ebde5c3bc76fc6ab1a14f7d5ce0ac1242 shimx64.efi
+94896c17d49fc8c8df0cc2836611586edab1615ce7cb58cf13fc5798de56b367 shimx64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?

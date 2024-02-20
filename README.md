@@ -223,9 +223,9 @@ launched directly.
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-d7ddb10719785f2660b87f84f8603987db145816f1a98b277145ed4a7828f086  shimx64.efi
+8dfa5fee2087612955889b3546d15d64d04ef54edd4465cb15ffadea816920ef  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-271403343af4a4dfb5fcc83faa83ba3ebde5c3bc76fc6ab1a14f7d5ce0ac1242 shimx64.efi
+94896c17d49fc8c8df0cc2836611586edab1615ce7cb58cf13fc5798de56b367 shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your SHIM?
@@ -251,7 +251,7 @@ and only append your own. More information on how SBAT works can be found
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.rh,3,The Fedora Project,shim,15.6,https://src.fedoraproject.org/rpms/shim-unsigned-x64
+shim.rh,3,The Fedora Project,shim,15.8,https://src.fedoraproject.org/rpms/shim-unsigned-x64
 shim.redhat,3,The Fedora Project,shim,15.8,https://src.fedoraproject.org/rpms/shim-unsigned-x64
 shim.fedora,3,The Fedora Project,shim,15.8,https://src.fedoraproject.org/rpms/shim-unsigned-x64
 
