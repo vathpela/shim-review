@@ -12,18 +12,22 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-https://github.com/vathpela/shim-review/tree/rhel-9-x64-20231201
+https://github.com/vathpela/shim-review/tree/rhel-10-aa64-20250818
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-$ sha256sum shimx64.efi
-d7ac3a63b380128cf3ceb2545f56caf4688c16329332c2d5dac537f787031585  shimx64.efi
-$ pesign -h -P -i shimx64.efi
-27b12463e599b3147635f272e3722960e443def60fef088eba600697017529f2 shimx64.efi
+$ sha256sum shimaa64.efi
+3d1e30d0406deefb8002ba0c5d652bea1aa4e6f851c86497cc213ecfc3783375  shimaa64.efi
+$ pesign -h -P -i shimaa64.efi
+c9efd6616e1e8abe36899ccac6a1563092982ca6c45924a9ad73f8e4d0067c01 shimaa64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
-https://github.com/rhboot/shim-review/issues/233 (for shim-15.6)
+https://github.com/rhboot/shim-review/issues/373 (RHEL 9 for x86_64)
 
+*******************************************************************************
+### If no security contacts have changed since verification, what is the link to your request, where they've been verified (if any, otherwise N/A)?
+*******************************************************************************
+Same security contacts as before.
