@@ -12,20 +12,20 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-https://github.com/vathpela/shim-review/tree/rhel-10-x64-20250818
+https://github.com/vathpela/shim-review/tree/fedora-aa64-20250818
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-$ sha256sum shimx64.efi
-65ebea5a1115d55d9da15eb2a2e7bdbed5619822e792b163a42b09c8f12d35ba  shimx64.efi
-$ pesign -h -P -i shimx64.efi
-fd77a4aa3364de652f7d7b2ee26910dd66837227c37d1cca0485316531e0eed4 shimx64.efi
+$ sha256sum shimaa64.efi
+2150f40827596da0ceec0c8e899f1ef1d3220dd58c52fb91991ec0faaa6f7744  shimaa64.efi
+$ pesign -h -P -i shimaa64.efi
+b133efe85567e402e1aae1fd5ac11ec2f74d82bd4cacbd1a860522092b5b11cb shimaa64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
-https://github.com/rhboot/shim-review/issues/373 (RHEL 9 for x86_64)
+https://github.com/rhboot/shim-review/issues/386 (fedora for x86_64)
 
 *******************************************************************************
 ### If no security contacts have changed since verification, what is the link to your request, where they've been verified (if any, otherwise N/A)?
