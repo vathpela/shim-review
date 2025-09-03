@@ -23,6 +23,8 @@ Here's the template:
 ### What organization or people are asking to have this signed?
 *******************************************************************************
 Organization name and website:  
+The Fedora Project
+https://www.fedoraproject.org/
 Red Hat, Inc.
 https://www.redhat.com/
 
@@ -63,7 +65,7 @@ Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
 *******************************************************************************
 ### What product or service is this for?
 *******************************************************************************
-Red Hat Enterprise Linux 9
+Fedora Linux (x86_64)
 
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
@@ -73,7 +75,7 @@ We're a major bigtime OS vendor
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-Business policy says we have to have a shim built from RHEL 9 tooling.
+We need the shim 16.1 features.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -207,14 +209,14 @@ This is a "RHEL-like" implementation.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,5 fixes
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,5 fixes
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
@@ -253,7 +255,8 @@ lockdown is on, as it is when Secure Boot is enabled.
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-Far too many to explain here.  RHEL actively backports features and bugfixes.
+Yes, but fairly few, and generally only stuff that's on the way upstream, plus
+the Secure Boot lockdown patches.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -265,8 +268,8 @@ Yes.
 ### If you use vendor_db functionality of providing multiple certificates and/or hashes please briefly describe your certificate setup.
 ### If there are allow-listed hashes please provide exact binaries for which hashes are created via file sharing service, available in public with anonymous access for verification.
 *******************************************************************************
-vendor_db contains redhatsecurebootca8.cer and redhatsecurebootca5.cer, which
-are included in this repository.
+vendor_cert contains fedora-ca-20200709.cer, which is included in this
+repository.
 
 *******************************************************************************
 ### If you are re-using the CA certificate from your last shim binary, you will need to add the hashes of the previous GRUB2 binaries exposed to the CVEs mentioned earlier to vendor_dbx in shim. Please describe your strategy.
@@ -285,7 +288,7 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-This is built on RHEL 9.  The Dockerfile in this repository can be used to
+This is built on fedora 41.  The Dockerfile in this repository can be used to
 launch an identical buildroot.
 
 *******************************************************************************
@@ -307,9 +310,9 @@ launched directly.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-8e8cab1b11aa8292d27c4d58256231f50d2e51e1b3361b58be74bd040ba910c0  shimx64.efi
+491460c3cb567a4fbdee9395a0c64fed6d61a839a3a5d684ade1382250c3ab62  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-4e84f472148a747224b8e9b137067c8de8465fe4f0bfb11bc0883b0e5a2cd78c shimx64.efi
+9d5c8223265f3119cbc44155abbb58717e998338f41a4edeacb4b0b94357821f shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -349,26 +352,26 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+shim.rh,3,The Fedora Project,shim,16.1,https://src.fedoraproject.org/rpms/shim-unsigned-x64
+shim.redhat,3,The Fedora Project,shim,16.1,https://src.fedoraproject.org/rpms/shim-unsigned-x64
+shim.fedora,3,The Fedora Project,shim,16.1-1,https://src.fedoraproject.org/rpms/shim-unsigned-x64
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,5,Free Software Foundation,grub,2.12,https//www.gnu.org/software/grub/
-grub.rh,2,Red Hat,grub2,2.12-28.el10,mailto:secalert@redhat.com
-grub.centos,2,Red Hat,grub2,2.12-28.el10,mailto:secalert@redhat.com
+grub.rh,2,Red Hat,grub2,2.12-25.fc41,mailto:secalert@redhat.com
 
 fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-fwupd-efi,1,Firmware update daemon,fwupd-efi,1.6,https://github.com/fwupd/fwupd-efi
-fwupd-efi.fedora,1,The Fedora Project,fwupd-efi,1.6-3.el10,https://src.fedoraproject.org/rpms/fwupd-efi
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.7,https://github.com/fwupd/fwupd-efi
+fwupd-efi.fedora,1,The Fedora Project,fwupd-efi,1.7-1.fc43,https://src.fedoraproject.org/rpms/fwupd-efi
 
 kernel-uki-virt:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
-linux,1,Red Hat,linux,6.12.0-55.31.1.el10_0.x86_64,mailto:secalert@redhat.com
-linux.rhel,1,Red Hat,linux,6.12.0-55.31.1.el10_0.x86_64,mailto:secalert@redhat.com
-kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,6.12.0-55.31.1.el10_0.x86_64,mailto:secalert@redhat.com
-systemd-stub,1,The systemd Developers,systemd,257,https://systemd.io/
-systemd-stub.rhel,1,Red Hat Enterprise Linux,systemd,257-9.el10_0.1-g8cd5633,mailto:secalert@redhat.com
+systemd-stub,1,The systemd Developers,systemd,258,https://systemd.io/
+systemd-stub.fedora,1,Fedora Linux,systemd,258~rc3-2.fc44,https://bugzilla.redhat.com/
+kernel.fedora,1,Red Hat,kernel-core,6.17.0-0.rc4.250903ge6b9dce0aeeb9.37.fc44.x86_64,mailto:secalert@redhat.com
+kernel-uki-virt.fedora,1,Red Hat,kernel-uki-virt,6.17.0-0.rc4.250903ge6b9dce0aeeb9.37.fc44.x86_64,mailto:secalert@redhat.com
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -376,14 +379,15 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
+all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 f2fs fat font
 gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
 gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
-linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
-part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
-search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
-efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common
-usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
+linux lvm luks luks2 memdisk mdraid09 mdraid1x minicmd net normal part_apple
+part_msdos part_gpt password_pbkdf2 pgp png reboot regexp search search_fs_uuid
+search_fs_file search_label serial sleep squash4 syslinuxcfg test tftp version
+video xfs zstd efi_netfs efifwsetup efinet lsefi lsefimmap connectefi backtrace
+chain tpm usb usbserial_common usbserial_pl2303 usbserial_ftdi
+usbserial_usbdebug keylayouts at_keyboard
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
@@ -393,7 +397,7 @@ Yes.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-grub2-2.12-28.el10
+grub2-2.12-25.fc41 (and other versions)
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
@@ -422,7 +426,8 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-Currently it's kernel-6.12.0-55.31.1.el10_0.  It has all the patches we've previously discussed.
+Currently it's kernel-6.17.0-0.rc4.250903ge6b9dce0aeeb9.37.fc44 (and other
+versions).  It has all the patches we've previously discussed.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
