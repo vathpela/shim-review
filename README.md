@@ -359,6 +359,14 @@ grub.centos,2,Red Hat,grub2,2.06-113.el9,mailto:secalert@redhat.com
 fwupdate:
 (not currently signed but when it is, this will look like the rhel-9-x64-20250818 submission)
 
+kernel-uki-virt:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+linux,1,Red Hat,linux,5.14.0-611.3.1.el9_7.aarch64,mailto:secalert@redhat.com
+linux.rhel,1,Red Hat,linux,5.14.0-611.3.1.el9_7.aarch64,mailto:secalert@redhat.com
+kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-611.3.1.el9_7.aarch64,mailto:secalert@redhat.com
+systemd,1,The systemd Developers,systemd,252,https://systemd.io/
+systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-55.el9,mailto:secalert@redhat.com
+
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
 Skip this, if you're not using GRUB2.
@@ -387,7 +395,7 @@ grub2-2.06-113.el9
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-It also launches fwupd and a systemd-stub UKI.  sbat details are above.
+It also launches fwupd and a systemd-stub UKI (kernel-uki-virt).  sbat details are above.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
