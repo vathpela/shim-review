@@ -387,7 +387,7 @@ grub2-2.06-113.el9
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-It also launches fwupd and a systemd-stub UKI.  sbat details are above.
+It also launches fwupd.  sbat details are above.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
