@@ -292,7 +292,7 @@ launch an identical buildroot.
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-[your text here]
+root.log and build.log
 
 *******************************************************************************
 ### What changes were made in the distro's secure boot chain since your SHIM was last signed?
