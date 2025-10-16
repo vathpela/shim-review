@@ -345,7 +345,24 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-[your text here]
+shim:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+
+grub2:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,5,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
+
+Note that all Fedora and RHEL builds have "grub.rh" ever since "grub,2" was
+current.  Before that, Fedora had "grub.fedora" as well.  Nothing has ever had
+"grub.redhat".
+
+grub.rh,2,Red Hat,grub2,2.06-113.el9,mailto:secalert@redhat.com
+grub.centos,2,Red Hat,grub2,2.06-113.el9,mailto:secalert@redhat.com
+
+fwupdate:
+(not currently signed but when it is, this will look like the rhel-9-x64-20250818 submission)
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
