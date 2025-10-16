@@ -405,7 +405,8 @@ It also launches fwupd and a systemd-stub UKI.  sbat details are above.
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+grub2 verifies signatures on booted kernels via shim. fwupd does not include
+code to launch other binaries, it can only load UEFI Capsule updates.
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
