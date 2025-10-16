@@ -73,7 +73,7 @@ We're a major bigtime OS vendor
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-[your text here]
+Business policy says we have to have a shim built from RHEL 9 tooling.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
