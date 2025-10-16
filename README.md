@@ -376,7 +376,14 @@ Skip this, if you're not using GRUB2.
 
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
-[your text here]
+all_video boot blscfg btrfs cat configfile cryptodisk echo ext2 fat font
+gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool
+gfxmenu gfxterm gzio halt hfsplus http increment iso9660 jpeg loadenv loopback
+linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos
+part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
+search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup
+efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common
+usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
