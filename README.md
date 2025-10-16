@@ -253,7 +253,7 @@ lockdown is on, as it is when Secure Boot is enabled.
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-[your text here]
+Far too many to explain here.  RHEL actively backports features and bugfixes.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
