@@ -405,7 +405,7 @@ code to launch other binaries, it can only load UEFI Capsule updates.
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-[your text here]
+Everything has secure boot validation and and .sbat self checks.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
