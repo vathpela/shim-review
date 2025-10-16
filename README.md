@@ -437,4 +437,5 @@ Numerous contributions to shim and to the review process...
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
-[your text here]
+THE MAGIC WORDS ARE SQUEAMISH OSSIFRAGE
+
