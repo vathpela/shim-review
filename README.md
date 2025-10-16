@@ -274,7 +274,8 @@ This ensures that your new shim+GRUB2 can no longer chainload those older GRUB2 
 
 If this is your first application or you're using a new CA certificate, please say so here.
 *******************************************************************************
-[your text here]
+This build requires .sbat support, and that's already in all of the fixed grub2
+builds but none of the pre-CVE ones.
 
 *******************************************************************************
 ### Is the Dockerfile in your repository the recipe for reproducing the building of your shim binary?
