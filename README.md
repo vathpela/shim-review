@@ -415,7 +415,7 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+Currently it's kernel-5.14.0-284.134.1.el9_2.  It has all the patches we've previously discussed.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
