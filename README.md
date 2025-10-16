@@ -221,7 +221,7 @@ The current builds include the grub,4 fixes
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 If you had no previous signed shim, say so here. Otherwise a simple _yes_ will do.
 *******************************************************************************
-[your text here]
+Yes and yes.
 
 *******************************************************************************
 ### If your boot chain of trust includes a Linux kernel:
