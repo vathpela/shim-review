@@ -346,7 +346,29 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-[your text here]
+shim:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+
+grub2:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,5,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.06-114.el9,mailto:secalert@redhat.com
+grub.centos,2,Red Hat,grub2,2.06-114.el9,mailto:secalert@redhat.com
+
+fwupdate:
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.31,mail:secalert@redhat.com
+
+kernel-uki-virt:
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+linux,1,Red Hat,linux,5.14.0-570.42.1.el9_6.x86_64,mailto:secalert@redhat.com
+linux.rhel,1,Red Hat,linux,5.14.0-570.42.1.el9_6.x86_64,mailto:secalert@redhat.com
+kernel-uki-virt.rhel,1,Red Hat,kernel-uki-virt,5.14.0-570.42.1.el9_6.x86_64,mailto:secalert@redhat.com
+systemd,1,The systemd Developers,systemd,252,https://systemd.io/
+systemd.rhel,1,Red Hat Enterprise Linux,systemd,252-51.el9_6.2,mailto:secalert@redhat.com
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
