@@ -17,7 +17,10 @@ https://github.com/vathpela/shim-review/tree/rhel-9-x64-20250818
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
-[your text here]
+$ sha256sum shimx64.efi
+8e8cab1b11aa8292d27c4d58256231f50d2e51e1b3361b58be74bd040ba910c0  shimx64.efi
+$ pesign -h -P -i shimx64.efi
+4e84f472148a747224b8e9b137067c8de8465fe4f0bfb11bc0883b0e5a2cd78c shimx64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
