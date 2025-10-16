@@ -279,7 +279,10 @@ Skip this, if this is your first application for having shim signed.
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-[your text here]
+$ sha256sum shimaa64.efi
+e5b3fa72c4b337310326284e862b4ff05499acc964ffbf0452a24b2afede4f02  shimaa64.efi
+$ pesign -h -P -i shimaa64.efi
+b930f16549f42f1a62e1fe004f9f64864dc792594006add27ab7729242cf800c shimaa64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
