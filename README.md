@@ -207,7 +207,7 @@ This is a "RHEL-like" implementation.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-[your text here]
+The current builds include the grub,4 fixes
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
