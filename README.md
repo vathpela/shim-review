@@ -425,7 +425,7 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-[your text here]
+Numerous contributions to shim and to the review process...
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
