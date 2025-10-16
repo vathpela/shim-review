@@ -324,7 +324,7 @@ package being built, and the build target.
 ### Do you use EV certificates as embedded certificates in the shim?
 A _yes_ or _no_ will do. There's no penalty for the latter.
 *******************************************************************************
-[your text here]
+No.
 
 *******************************************************************************
 ### Are you embedding a CA certificate in your shim?
