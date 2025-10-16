@@ -300,7 +300,7 @@ For example, signing new kernel's variants, UKI, systemd-boot, new certs, new CA
 
 Skip this, if this is your first application for having shim signed.
 *******************************************************************************
-[your text here]
+This is for aarch64.
 
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
