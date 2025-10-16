@@ -23,7 +23,8 @@ Here's the template:
 ### What organization or people are asking to have this signed?
 *******************************************************************************
 Organization name and website:  
-[your text here]
+Red Hat, Inc.
+https://www.redhat.com/
 
 *******************************************************************************
 ### What's the legal data that proves the organization's genuineness?
@@ -45,7 +46,19 @@ Issuer: O=MyIssuer, Ltd., CN=MyIssuer EV Code Signing CA
 Subject: C=XX, O=MyCompany, Inc., CN=MyCompany, Inc.
 ```
 
-[your text here]
+```
+        Serial Number:
+            09:36:43:b5:a9:ab:59:d6:84:d5:53:b5:74:54:97:52
+        Signature Algorithm: PKCS #1 SHA-256 With RSA Encryption
+        Issuer: "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,
+            O="DigiCert, Inc.",C=US"
+        Validity:
+            Not Before: Tue Jan 28 00:00:00 2025
+            Not After : Sun Feb 27 23:59:59 2028
+        Subject: "CN="Red Hat, Inc.",O="Red Hat, Inc.",L=Raleigh,ST=North Car
+            olina,C=US,serialNumber=2945436,businessCategory=Private Organiza
+            tion,incorporationState=Delaware,incorporationCountry=US"
+```
 
 *******************************************************************************
 ### What product or service is this for?
