@@ -135,7 +135,7 @@ authentic, please confirm this here with a simple *yes*.
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-[your text here]
+Yes, these were created from that tarball.
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
