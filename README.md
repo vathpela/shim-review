@@ -285,7 +285,8 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-[your text here]
+This is built on RHEL 9.  The Dockerfile in this repository can be used to
+launch an identical buildroot.
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
