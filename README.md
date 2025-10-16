@@ -314,7 +314,10 @@ b930f16549f42f1a62e1fe004f9f64864dc792594006add27ab7729242cf800c shimaa64.efi
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-[your text here]
+The keys are in an HSM managed by our PSIRT team, builders talk to it over
+https using gssapi for authentication, and each key is authorized for use by
+specific tickets, the issuing of which is protected by ACLs for the user, the
+package being built, and the build target.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
