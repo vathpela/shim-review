@@ -238,7 +238,17 @@ We have all of these.
 ### with Secure Boot enabled?
 Hint: If it does not, we are not likely to sign your shim.
 *******************************************************************************
-[your text here]
+All of the following commits are present:
+
+475fb4e8b2f4444d1d7b406ff3a7d21bc89a1e6f
+1957a85b0032a81e6482ca4aab883643b8dae06e
+612bd01fc6e04c3ce9eb59587b4a7e4ebd6aff35
+75b0cea7bf307f362057cc778efe89af4c615354
+435d1a471598752446a72ad1201b3c980526d869
+
+The configuration setting CONFIG_EFI_CUSTOM_SSDT_OVERLAYS is enabled, but since
+1957a85b0032a81e6482ca4aab883643b8dae06e is present, this is disabled when
+lockdown is on, as it is when Secure Boot is enabled.
 
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
