@@ -68,7 +68,7 @@ Red Hat Enterprise Linux 9
 *******************************************************************************
 ### What's the justification that this really does need to be signed for the whole world to be able to boot it?
 *******************************************************************************
-[your text here]
+We're a major bigtime OS vendor
 
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
