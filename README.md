@@ -231,7 +231,7 @@ Yes and yes.
 Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
-[your text here]
+We have all of these.
 
 *******************************************************************************
 ### How does your signed kernel enforce lockdown when your system runs
