@@ -227,14 +227,14 @@ This is a "RHEL-like" implementation.
   * CVE-2025-1118
   * CVE-2025-1125
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,5 fixes
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 5?
 Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
 `grub,5,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
-The current builds include the grub,4 fixes
+The current builds include the grub,5 fixes
 
 *******************************************************************************
 ### Were old shims hashes provided to Microsoft for verification and to be added to future DBX updates?
