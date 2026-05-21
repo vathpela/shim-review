@@ -73,7 +73,7 @@ We're a major bigtime OS vendor
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-Business policy says we have to have a shim built from RHEL 9 tooling.
+Business policy says we have to have a shim built from RHEL 10 tooling.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -156,7 +156,7 @@ None
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-It's not set.
+It is set in this build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -307,9 +307,9 @@ launched directly.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-8e8cab1b11aa8292d27c4d58256231f50d2e51e1b3361b58be74bd040ba910c0  shimx64.efi
+b4b9d7be38e91eae128d7c90b0689f1246947a427e9920c75b3434a9b395cbdc  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-4e84f472148a747224b8e9b137067c8de8465fe4f0bfb11bc0883b0e5a2cd78c shimx64.efi
+5836a51b4c05585e82ea109c071ea4af3f1f89a9c6a507da4343eb83b5c6671b shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -349,7 +349,7 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+shim.redhat,3,Red Hat Inc,shim,16.1,secalert@redhat.com
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md

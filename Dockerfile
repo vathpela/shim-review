@@ -1,8 +1,6 @@
-RUN echo 3
 FROM docker://vathpela/shim-rhel-10-x64-20250818-buildroot:latest
 COPY rpmmacros /root/.rpmmacros
-RUN echo 0
-RUN wget https://pjones.fedorapeople.org/rhel-10-x64-20250818/shim-unsigned-x64-16.1-1.el10.src.rpm
+RUN wget https://pjones.fedorapeople.org/rhel-10-x64-20260521/shim-unsigned-x64-16.1-1.el10.src.rpm
 RUN rpm -ivh shim-unsigned-x64-16.1-1.el10.src.rpm
 RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-x64.spec
