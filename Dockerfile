@@ -1,8 +1,7 @@
-RUN echo 5
 FROM docker://vathpela/shim-rhel-9-aa64-20250818-buildroot:latest
 
 COPY rpmmacros /root/.rpmmacros
-RUN wget https://pjones.fedorapeople.org/rhel-9-aa64-20250818/shim-unsigned-aarch64-16.1-2.el9.src.rpm
+RUN wget https://pjones.fedorapeople.org/rhel-9-aa64-20260521/shim-unsigned-aarch64-16.1-2.el9.src.rpm
 RUN rpm -ivh shim-unsigned-aarch64-16.1-2.el9.src.rpm
 RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-aarch64.spec
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-aarch64.spec

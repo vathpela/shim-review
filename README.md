@@ -156,7 +156,7 @@ None
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-It's not set.
+It is set in this build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -306,9 +306,9 @@ This is for aarch64.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimaa64.efi
-e5b3fa72c4b337310326284e862b4ff05499acc964ffbf0452a24b2afede4f02  shimaa64.efi
+306f82b4d2c7b1b6f2061474cec226625e81e1db53c194523f6692449d5ab6b7  shimaa64.efi
 $ pesign -h -P -i shimaa64.efi
-b930f16549f42f1a62e1fe004f9f64864dc792594006add27ab7729242cf800c shimaa64.efi
+2be37f30e27accba3ae11d60f072ca3da69cfc9a30384e13b934611d0dd784c3 shimaa64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -348,7 +348,7 @@ Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` t
 shim:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
-shim.redhat,3,Red Hat Inc,shim,15.8,secalert@redhat.com
+shim.redhat,3,Red Hat Inc,shim,16.1,secalert@redhat.com
 
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
