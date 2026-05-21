@@ -307,9 +307,9 @@ launched directly.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-4c31a871ef0ca401729f392b72151158b4245179612fa417388ede4ae92e641e  shimx64.efi
+8e8cab1b11aa8292d27c4d58256231f50d2e51e1b3361b58be74bd040ba910c0  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-227035aac06d3e409be6eae0d3b3e1d30e66254d1baac67894463b5cee3d08fa shimx64.efi
+4e84f472148a747224b8e9b137067c8de8465fe4f0bfb11bc0883b0e5a2cd78c shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
