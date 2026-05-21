@@ -1,8 +1,7 @@
-RUN echo 4
 FROM docker://vathpela/shim-rhel-10-aa64-20250818-buildroot:latest
 
 COPY rpmmacros /root/.rpmmacros
-RUN wget https://pjones.fedorapeople.org/rhel-10-aa64-20250818/shim-unsigned-aarch64-16.1-2.el10.src.rpm
+RUN wget https://pjones.fedorapeople.org/rhel-10-aa64-20260521/shim-unsigned-aarch64-16.1-2.el10.src.rpm
 RUN rpm -ivh shim-unsigned-aarch64-16.1-2.el10.src.rpm
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-aarch64.spec
 COPY shimaa64.efi /
