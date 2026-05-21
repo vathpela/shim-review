@@ -1,16 +1,18 @@
+RUN echo 3
 FROM docker://vathpela/shim-rhel-10-x64-20250818-buildroot:latest
-COPY shimx64.efi shimx64.efi.orig
-COPY shimx64.efi shimx64.efi
-COPY post-process-pe ./
-RUN wget -O shim-rhel-10-x64-20250818.efi https://github.com/vathpela/shim-review/raw/refs/heads/rhel-10-x64-20250818/shimx64.efi
-RUN ./post-process-pe -n -x shimx64.efi
-RUN hexdump -Cv shim-rhel-10-x64-20250818.efi > shim-rhel-10-x64-20250818.hex
-RUN hexdump -Cv shimx64.efi.orig > orig.hex
-RUN hexdump -Cv shimx64.efi > new.hex
-RUN echo this should show no differences:
-RUN diff -u orig.hex new.hex
-RUN echo this should show changes in the 32-bit checksum at 0xd8 and the single bit set at 0xdf
-RUN diff -u shim-rhel-10-x64-20250818.hex new.hex || :
-RUN echo "              ^^^^^^^^^^^^ checksum ^ NX_COMPAT" >/dev/null
-RUN pesign -h -P -i shimx64.efi
-RUN sha256sum shimx64.efi
+COPY rpmmacros /root/.rpmmacros
+RUN echo 0
+RUN wget https://pjones.fedorapeople.org/rhel-10-x64-20250818/shim-unsigned-x64-16.1-1.el10.src.rpm
+RUN rpm -ivh shim-unsigned-x64-16.1-1.el10.src.rpm
+RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-x64.spec
+RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-x64.spec
+COPY shimx64.efi /
+RUN rpm2cpio /builddir/build/RPMS/x86_64/shim-unsigned-x64-16.1-1.el10.x86_64.rpm | cpio -diu
+RUN ls -l /*.efi ./usr/share/shim/16.1-1.el10/*/shim*.efi
+RUN hexdump -Cv ./usr/share/shim/16.1-1.el10/x64/shimx64.efi > built-x64.hex
+RUN hexdump -Cv /shimx64.efi > orig-x64.hex
+RUN objdump -h /usr/share/shim/16.1-1.el10/x64/shimx64.efi
+RUN diff -u orig-x64.hex built-x64.hex
+RUN pesign -h -P -i /usr/share/shim/16.1-1.el10/x64/shimx64.efi
+RUN pesign -h -P -i /shimx64.efi
+RUN sha256sum /usr/share/shim/16.1-1.el10/x64/shimx64.efi /shimx64.efi
