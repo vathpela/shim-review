@@ -155,7 +155,7 @@ None
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-It's not set.
+It is set in this build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -329,9 +329,9 @@ launched directly.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-491460c3cb567a4fbdee9395a0c64fed6d61a839a3a5d684ade1382250c3ab62  shimx64.efi
+461fd4312a048ce1f81e2a913cd59264fb39aeef4da660a9128420d16a9e3323  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-9d5c8223265f3119cbc44155abbb58717e998338f41a4edeacb4b0b94357821f shimx64.efi
+ed7f7139df77a5920db5777c773fb1b02a7d27bdfafa6e0114c3a5a19488d1a2 shimx64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -339,7 +339,7 @@ Describe the security strategy that is used for key protection. This can range f
 *******************************************************************************
 The keys are in an HSM managed by our PSIRT team, builders talk to it over
 https using gssapi for authentication, and each key is authorized for use by
-specific tickets, the issuing of which is protected by ACLs for the user, the
+specific tickets, the issuer of which is protected by ACLs for the user, the
 package being built, and the build target.
 
 *******************************************************************************
@@ -462,4 +462,3 @@ Numerous contributions to shim and to the review process...
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
 THE MAGIC WORDS ARE SQUEAMISH OSSIFRAGE
-

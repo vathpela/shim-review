@@ -12,20 +12,22 @@ Confirm the following are included in your repo, checking each box:
 *******************************************************************************
 ### What is the link to your tag in a repo cloned from rhboot/shim-review?
 *******************************************************************************
-https://github.com/vathpela/shim-review/tree/fedora-x64-20250818
+https://github.com/vathpela/shim-review/tree/fedora-x64-20260527
 
 *******************************************************************************
 ### What is the SHA256 hash of your final SHIM binary?
 *******************************************************************************
 $ sha256sum shimx64.efi
-491460c3cb567a4fbdee9395a0c64fed6d61a839a3a5d684ade1382250c3ab62  shimx64.efi
+461fd4312a048ce1f81e2a913cd59264fb39aeef4da660a9128420d16a9e3323  shimx64.efi
 $ pesign -h -P -i shimx64.efi
-9d5c8223265f3119cbc44155abbb58717e998338f41a4edeacb4b0b94357821f shimx64.efi
+ed7f7139df77a5920db5777c773fb1b02a7d27bdfafa6e0114c3a5a19488d1a2 shimx64.efi
 
 *******************************************************************************
 ### What is the link to your previous shim review request (if any, otherwise N/A)?
 *******************************************************************************
-https://github.com/rhboot/shim-review/issues/386 (fedora for x86_64)
+https://github.com/rhboot/shim-review/issues/496 (fedora for x86_64)
+
+Note that this is a rebuild of that same version with the NX compat flag set.
 
 *******************************************************************************
 ### If no security contacts have changed since verification, what is the link to your request, where they've been verified (if any, otherwise N/A)?
