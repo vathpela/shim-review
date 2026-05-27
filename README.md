@@ -390,6 +390,11 @@ sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd-efi
 fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.8,mail:secalert@redhat.com
 
+Note that in RHEL 8, the "fwupd-efi" plugin is built within the "fwupd" source
+package.  In the above version numbers, "1.3" is the upstream fwupd-efi plugin
+version, but "1.7.8" is the version of the fwupd package it is being built as a
+part of.
+
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
 Skip this, if you're not using GRUB2.
