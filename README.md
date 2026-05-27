@@ -155,7 +155,7 @@ None
 
 See https://techcommunity.microsoft.com/t5/hardware-dev-center/nx-exception-for-shim-community/ba-p/3976522 for more details on the signing of shim without NX bit.
 *******************************************************************************
-It's not set.
+It is set in this build.
 
 *******************************************************************************
 ### What exact implementation of Secure Boot in GRUB2 do you have? (Either Upstream GRUB2 shim_lock verifier or Downstream RHEL/Fedora/Debian/Canonical-like implementation)
@@ -329,9 +329,9 @@ launched directly.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 $ sha256sum shimaa64.efi
-2150f40827596da0ceec0c8e899f1ef1d3220dd58c52fb91991ec0faaa6f7744  shimaa64.efi
+6ff29178b2a4a4e81ed1eb30597a2598944f4d69a38210fed1c7b425a71daa7e  shimaa64.efi
 $ pesign -h -P -i shimaa64.efi
-b133efe85567e402e1aae1fd5ac11ec2f74d82bd4cacbd1a860522092b5b11cb shimaa64.efi
+c332c814838507a63e2ed5df4345d74400c30471e39d61f0d79b3a04874d5a47 shimaa64.efi
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -339,7 +339,7 @@ Describe the security strategy that is used for key protection. This can range f
 *******************************************************************************
 The keys are in an HSM managed by our PSIRT team, builders talk to it over
 https using gssapi for authentication, and each key is authorized for use by
-specific tickets, the issuing of which is protected by ACLs for the user, the
+specific tickets, the issuer of which is protected by ACLs for the user, the
 package being built, and the build target.
 
 *******************************************************************************
@@ -460,4 +460,3 @@ Numerous contributions to shim and to the review process...
 ### Add any additional information you think we may need to validate this shim signing application.
 *******************************************************************************
 THE MAGIC WORDS ARE SQUEAMISH OSSIFRAGE
-

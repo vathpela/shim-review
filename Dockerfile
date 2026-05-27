@@ -1,8 +1,6 @@
 FROM docker://vathpela/fedora-aa64-20250818-buildroot:latest
-RUN echo 3
 COPY rpmmacros /root/.rpmmacros
-RUN echo 0
-RUN wget https://pjones.fedorapeople.org/fedora-aa64-20250818/shim-unsigned-aarch64-16.1-1.src.rpm
+RUN wget https://pjones.fedorapeople.org/fedora-aa64-20260527/shim-unsigned-aarch64-16.1-1.src.rpm
 RUN rpm -ivh shim-unsigned-aarch64-16.1-1.src.rpm
 RUN sed -i 's/linux32 -B/linux32/g' /builddir/build/SPECS/shim-unsigned-aarch64.spec
 RUN rpmbuild -bb /builddir/build/SPECS/shim-unsigned-aarch64.spec
