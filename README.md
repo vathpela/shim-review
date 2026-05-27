@@ -385,6 +385,11 @@ sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
 fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.31,mail:secalert@redhat.com
 
+Note that in RHEL 9, the "fwupd-efi" plugin is built within the "fwupd" source
+package.  In the above version numbers, "1.4" is the upstream fwupd-efi plugin
+version, but "1.9.31" is the version of the fwupd package it is being built as a
+part of.
+
 kernel-uki-virt:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 linux,1,Red Hat,linux,5.14.0-570.42.1.el9_6.x86_64,mailto:secalert@redhat.com
@@ -416,7 +421,7 @@ Yes.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-grub2-2.06-113.el9
+grub2-2.06-114.el9
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
