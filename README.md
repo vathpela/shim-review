@@ -372,13 +372,13 @@ shim.redhat,3,Red Hat Inc,shim,16.1,secalert@redhat.com
 grub2:
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,5,Free Software Foundation,grub,2.06,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.06-114.el9,mailto:secalert@redhat.com
+grub.centos,2,Red Hat,grub2,2.06-114.el9,mailto:secalert@redhat.com
+
 
 Note that all Fedora and RHEL builds have "grub.rh" ever since "grub,2" was
 current.  Before that, Fedora had "grub.fedora" as well.  Nothing has ever had
 "grub.redhat".
-
-grub.rh,2,Red Hat,grub2,2.06-113.el9,mailto:secalert@redhat.com
-grub.centos,2,Red Hat,grub2,2.06-113.el9,mailto:secalert@redhat.com
 
 fwupdate:
 (not currently signed but when it is, this will look like the rhel-9-x64-20250818 submission)
@@ -405,7 +405,7 @@ Yes.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-grub2-2.06-113.el9
+grub2-2.06-114.el9
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
