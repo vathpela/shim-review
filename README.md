@@ -378,9 +378,10 @@ grub.centos,2,Red Hat,grub2,2.06-114.el9,mailto:secalert@redhat.com
 
 Note that all Fedora and RHEL builds have "grub.rh" ever since "grub,2" was
 current.  Before that, Fedora had "grub.fedora" as well.  Nothing has ever had
-"grub.redhat".
+"grub.redhat".  This is also the exact same package (and code) as the centos
+builds, which is why it carries the centos sbat data as well.
 
-fwupdate:
+fwupd:
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 fwupd-efi,1,Firmware update daemon,fwupd-efi,1.4,https://github.com/fwupd/fwupd-efi
 fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.9.31,mail:secalert@redhat.com
